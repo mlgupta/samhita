@@ -1,0 +1,34 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<workflows>
+  <workflow ItemTypeName="WF_SAM">
+    <ProcessName>SAM_PROCESS</ProcessName>
+    <Name>Approver WorkFlow</Name>
+    <Description>This is an approver workflow</Description>
+    <PrefixName>wf</PrefixName>
+    <requisitionDescription>Requisition For Approval</requisitionDescription>
+  </workflow>
+  <workflow ItemTypeName="SAM_WTH">
+    <ProcessName>WATCH_PROCESS</ProcessName>
+    <Name>Watch Workflow</Name>
+    <Description>This is for watch functionality</Description>
+    <PrefixName>WT</PrefixName>
+  </workflow>
+  <workflow ItemTypeName="PSF_TYPE">
+    <ProcessName>PSF_PROC</ProcessName>
+    <Name>People Soft Financial</Name>
+    <Description>This is a workflow for managing People Soft Vouchers</Description>
+    <PrefixName>PSF</PrefixName>
+  </workflow>
+  <workflow ItemTypeName="SAP_TYPE">
+    <ProcessName>SAP_PROC</ProcessName>
+    <Name>SAP</Name>
+    <Description>This is a workflow for managing SAP Vouchers</Description>
+    <PrefixName>SAP</PrefixName>
+  </workflow>
+  <workflow ItemTypeName="PSH_TYPE">
+    <ProcessName>PSHR_PROC</ProcessName>
+    <Name>PeopleSoft HR</Name>
+    <Description>Worflow to manage PS HR Vouchers</Description>
+    <PrefixName>PSHR</PrefixName>
+  </workflow>
+</workflows>

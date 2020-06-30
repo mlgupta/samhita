@@ -1,0 +1,33 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Configuration>
+  <CMSDK>
+    <Domain>ifs://dms.dbsentry.com:1521:samdb:CMSDK</Domain>
+    <Domain1>ifs://user4.dbsentry.com:1521:ora9i.user4.dbsentry.com:CMSDK</Domain1>
+    <IfsSchemaPassword>cmsdk</IfsSchemaPassword>
+    <IfsService>IfsDefaultService</IfsService>
+    <ServiceConfiguration>SmallServiceConfiguration</ServiceConfiguration>
+    <log4j-init-file>/WEB-INF/log4j.properties</log4j-init-file>
+    <nonadminsecurity>0</nonadminsecurity>
+    <redirector>http://192.168.0.7:8988</redirector>
+    <faxtempdir>FaxTempDir</faxtempdir>
+    <jobRetrialInterval>1</jobRetrialInterval>
+    <jobRetrialCount>6</jobRetrialCount>
+    <DocLogUser>logger</DocLogUser>
+    <DocLogPassword>logger</DocLogPassword>
+    <sysaduser>system</sysaduser>
+    <sysadpwd>system</sysadpwd>    
+    <dbsysaduser>system</dbsysaduser>
+    <dbsysadpwd>system</dbsysadpwd>
+    <scheduser>scheduler</scheduser>
+    <schedpwd>scheduler</schedpwd>
+    <DriverType>thin</DriverType>
+    <ServerName>192.168.0.7</ServerName>
+    <DatabaseName>samdb</DatabaseName>
+    <PortNumber>1521</PortNumber>
+    <WFConnMinLimit>3</WFConnMinLimit>
+    <WFConnMaxLimit>8</WFConnMaxLimit>
+    <User>owf_mgr</User>
+    <Password>dbs9901</Password>
+    <DavPath>http://192.168.0.7:7778/cmsdk/content</DavPath>
+  </CMSDK>
+</Configuration>

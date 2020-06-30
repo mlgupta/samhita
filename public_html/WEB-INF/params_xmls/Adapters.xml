@@ -1,0 +1,28 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Adapters>
+  <Adapter ItemTypeName="PSF_TYPE">
+    <Name>People Soft Financial</Name>
+    <Enabled>True</Enabled>
+    <PrefixName>PSF</PrefixName>
+    <keys>
+      <key keyid="Jan-30-2006-17-02-23">366782</key>
+      <key keyid="1">253671</key>
+      <key keyid="3">253671</key>
+    <key keyid="screen11Key">983023</key></keys>
+  </Adapter>
+  <Adapter ItemTypeName="PSH_TYPE">
+    <Name>People Soft HR</Name>
+    <Enabled>True</Enabled>
+    <PrefixName>PSHR</PrefixName>
+    <keys>
+      <key keyid="pshr1">950519</key>
+    </keys>
+  </Adapter>
+  <Adapter ItemTypeName="SAP_TYPE">
+    <Name>SAP</Name>
+    <Enabled>True</Enabled>
+    <PrefixName>SAP</PrefixName>
+    <keys>
+    </keys>
+  </Adapter>
+</Adapters>

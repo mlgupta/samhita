@@ -1,0 +1,158 @@
+BODY {
+  BACKGROUND-COLOR: #ffffff;
+}
+TD
+{
+    COLOR: #000000;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+}
+TH
+{
+ 	COLOR: #FFFFFF;
+	FONT-FAMILY:Verdana, Arial, Geneva, Helvetica, sans-serif;
+}
+A:link {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; 
+  COLOR: #FFFFFF; 
+}
+A:visited {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; 
+  COLOR: #FFFFFF; 
+}
+A:hover {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	COLOR: #FFFFFF;
+}
+A:active {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; 
+  COLOR: #FFFFFF; 
+}
+A.menu:link
+{
+    COLOR: #333333;
+    FONT-FAMILY: Verdana, Arial, Geneva, Helvetica, sans-serif;
+}
+A.menu:visited
+{
+    COLOR: #333333;
+    FONT-FAMILY: Verdana, Arial, Geneva, Helvetica, sans-serif;
+}
+A.menu:hover
+{
+    COLOR: #333333;
+    FONT-FAMILY: Verdana, Arial, Geneva, Helvetica, sans-serif;
+}
+A.menu:active
+{
+    COLOR: #333333;
+    FONT-FAMILY:  Verdana, Arial, Geneva, Helvetica, sans-serif;
+}
+A.menuFldr:link
+{
+    COLOR: #333333;
+    FONT-FAMILY: Verdana, Arial, Geneva, Helvetica, sans-serif;
+}
+A.menuFldr:visited
+{
+    COLOR: #333333;
+    FONT-FAMILY: Verdana, Arial, Geneva, Helvetica, sans-serif;
+}
+A.menuFldr:hover
+{
+    COLOR: #333333;
+    FONT-FAMILY: Verdana, Arial, Geneva, Helvetica, sans-serif;
+}
+A.menuFldr:active
+{
+    COLOR: #333333;
+    FONT-FAMILY:  Verdana, Arial, Geneva, Helvetica, sans-serif;
+}
+
+A.dataLink:link
+{
+    COLOR: #000000;
+    FONT-FAMILY: Verdana, Arial, Geneva, Helvetica, sans-serif;
+}
+A.dataLink:visited
+{
+    COLOR: #000000;
+    FONT-FAMILY: Verdana, Arial, Geneva, Helvetica, sans-serif;
+}
+A.dataLink:hover
+{
+    COLOR: #000000;
+    FONT-FAMILY: Verdana, Arial, Geneva, Helvetica, sans-serif;
+}
+A.dataLink:active
+{
+    COLOR: #000000;
+    FONT-FAMILY:  Verdana, Arial, Geneva, Helvetica, sans-serif;
+}
+.dropMenu{
+COLOR:#333333;
+FONT-FAMILY:Arial,Verdana,Arial,Helvetica,Sans-serif;
+}
+.dropMenuover{
+COLOR:#ffffff;
+FONT-FAMILY:Verdana,Arial,Helvetica,Sans-serif;
+}
+.menuForAdapter{
+    COLOR: #333333;
+    FONT-FAMILY: Verdana, Arial, Geneva, Helvetica, sans-serif;
+}
+.tabText
+{
+  COLOR: #333333;
+	FONT-FAMILY: Verdana, Arial, Geneva, Helvetica, sans-serif;
+}
+A.tabTextLink:link
+{
+    COLOR: #666666;
+    FONT-FAMILY: Verdana, Arial, Geneva, Helvetica, sans-serif;
+}
+A.tabTextLink:visited
+{
+    COLOR: #666666;
+    FONT-FAMILY: Verdana, Arial, Geneva, Helvetica, sans-serif;
+}
+A.tabTextLink:hover
+{
+    COLOR: #666666;
+    FONT-FAMILY: Verdana, Arial, Geneva, Helvetica, sans-serif;
+}
+A.tabTextLink:active
+{
+    COLOR: #666666;
+    FONT-FAMILY: Verdana, Arial, Geneva, Helvetica, sans-serif;
+}
+A.tree:link
+{
+    COLOR: #000000;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+}
+A.tree:visited
+{
+    COLOR: #000000;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+}
+A.tree:hover
+{
+    COLOR: #000000;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+}
+A.tree:active
+{
+    COLOR: #000000;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+}
+.componentStyle
+{
+	FONT-FAMILY: Verdana, Arial, Geneva, Helvetica, sans-serif;
+  COLOR: #000000;
+  BACKGROUND-COLOR: #ffffff;  
+}
+.buttons
+{
+  COLOR: #000000;
+  FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+}

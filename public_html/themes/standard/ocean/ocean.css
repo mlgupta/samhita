@@ -1,0 +1,100 @@
+body { 
+scrollbar-base-color: #; 
+scrollbar-face-color: #99ccff; 
+scrollbar-track-color: #D7E2FA; 
+scrollbar-arrow-color: #000099;
+scrollbar-highlight-color: #FFFFFF; 
+scrollbar-3dlight-color: #2B61CC; 
+scrollbar-shadow-color: #6699FF;
+scrollbar-darkshadow-color: #000000; 
+}
+
+TH
+{
+ 	  BACKGROUND-COLOR:#2B61CC;
+}
+
+.bgClrLvl_1{BACKGROUND-COLOR: #98009E} 
+.bgClrLvl_2{BACKGROUND-COLOR: #2B61CC}
+.bgClrLvl_3{BACKGROUND-COLOR: #D7E2FA} 
+.bgClrLvl_4{BACKGROUND-COLOR: #E7EDFF} 
+.bgClrLvl_F{BACKGROUND-COLOR: #FFFFFF}
+
+.borderClrLvl_1{BORDER: 1px solid #98009E} 
+.borderClrLvl_2{BORDER: 1px solid #2B61CC}
+.borderClrLvl_3{BORDER: 1px solid #D7E2FA} 
+.borderClrLvl_4{BORDER: 1px solid #E7EDFF} 
+.borderClrLvl_F{BORDER: 1px solid #FFFFFF}
+
+/* Following classes are for Colorscheme images common to all pages ****************************************************************/
+/*********These Class are blank because Color Will be applied without Images - *******/
+/**Don' t Remove these Class Kept for Symetry across Color Scheme .css Files */
+.imgToolBar {
+}
+
+.imgStatusBar {
+}
+
+.imgData {
+}
+
+
+.imgMenuBar {
+}
+
+/* Following classes are for Colorscheme images common to all pages ****************************************************************/
+.imgToolBar {
+	background-image: url("toolbar_bg_tile28px.gif");
+  background-repeat:repeat-x;
+}
+
+.imgStatusBar {
+	background-image: url("statusbar_bg_tile23px.gif");
+  background-repeat:repeat-x;
+}
+.imgData {
+	background-image: url("data_bg_tile200px.gif");
+  background-repeat:repeat-x;
+  background-position:bottom;
+}
+.imgMenuBar21 {
+	background-image: url("menubar_bg_tile21px.gif");
+	background-repeat:repeat-x;
+}
+.imgMenuBar29 {
+	background-image: url("menubar_bg_tile29px.gif");
+	background-repeat:repeat-x;  
+}
+.imgMenuBarMotif {
+	background-image: url("menubar_motif.gif");
+	background-repeat:repeat-x;
+}
+
+.imgTopMenuTile{
+	background-image: url("top_menu_tille20.gif");
+	background-repeat:repeat-x;
+}
+.imgTopMenuCorner{
+	background-image: url("top_menu_corner.gif");
+	background-repeat:repeat-x;
+}
+
+
+/* Following classes are for tab images common to all pages ****************************************************************/
+.imgTabLeft {
+	background-image: url("tab_left.gif");
+	background-repeat:no-repeat;
+  height:20px;
+}
+.imgTabTile {
+	background-image: url("tab_tile.gif");
+	background-repeat:repeat-x;
+  height:20px;
+}
+.imgTabRight {
+	background-image: url("tab_right.gif");
+	background-repeat:no-repeat;
+  height:20px;
+}
+
+

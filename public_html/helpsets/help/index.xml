@@ -1,0 +1,147 @@
+<?xml version='1.0' ?>
+<index version="1.0">
+
+ <indexitem text="Introduction">
+   <indexentry text="Introduction to Samhita Document Management System" target="ohg_about_about_html" />
+   <indexentry text="Introduction to User" target="user_introduction_html" />
+   <indexentry text="Introduction to Group" target="group_introduction_html" />
+   <indexentry text="Introduction to Theme" target="theme_introduction_html" />
+   <indexentry text="Introduction to Security" target="security_introduction_html" />
+   <indexentry text="Introduction to Document" target="folder_doc_introduction_html" />
+   <indexentry text="Introduction to Scheduler" target="scheduler_introduction_html" />
+   <indexentry text="Introduction to Mail &amp; Fax" target="user_introduction_html" />
+   <indexentry text="Introduction to Work Flow" target="introduction_to_workflow_html" />
+   <indexentry text="Introduction to Adapters" target="adapters_introduction_html" />
+ </indexitem>
+
+ <indexitem text="Create">
+   <indexentry text="Create a User" target="user_new_html" />
+   <indexentry text="Create a Group" target="group_new_html" />
+   <indexentry text="Create a Theme" target="theme_new_html" />
+   <indexentry text="Create ACL" target="acl_new_html" />
+   <indexentry text="Create a Permission Bundle" target="permission_bundle_new_html" />
+   <indexentry text="Create a new Folder" target="folder_new_html" />
+   <indexentry text="Create a Mail Job" target="mail_new_html" />
+   <indexentry text="Create a Fax Job" target="fax_new_html" />   
+ </indexitem>
+
+
+ <indexitem text="Edit">
+   <indexentry text="Edit a User" target="user_edit_html" />
+   <indexentry text="Edit a Group" target="group_edit_html" />
+   <indexentry text="Edit a Theme" target="theme_edit_html" />
+   <indexentry text="Edit ACL" target="acl_edit_html" />
+   <indexentry text="Edit a Permission Bundle" target="permission_bundle_edit_html" />
+   <indexentry text="Reschedule a Job (Mail/Fax)" target="job_reschedule_html" />   
+ </indexitem>
+
+ <indexitem text="Delete">   
+   <indexentry text="Delete a User" target="user_delete_html" />
+   <indexentry text="Delete a Group" target="group_delete_html" />
+   <indexentry text="Delete a Theme" target="theme_delete_html" />
+   <indexentry text="Delete ACL" target="acl_delete_html" />
+   <indexentry text="Delete a Permission Bundle" target="permission_bundle_delete_html" />
+   <indexentry text="Delete Folder(s)/Document(s)" target="folder_doc_delete_html"/>
+   <indexentry text="Delete a  Job (Mail/Fax)" target="job_delete_html" />      
+ </indexitem>
+
+ <indexitem text="Search">   
+   <indexentry text="Search a User" target="user_search_html" />
+   <indexentry text="Search a Group" target="group_search_html" />
+   <indexentry text="Search a Theme" target="theme_search_html" />
+   <indexentry text="Search ACL" target="acl_search_html" />
+   <indexentry text="Search a Permission Bundle" target="permission_bundle_search_html" />
+   <indexentry text="Search  folder/document" target="folder_doc_search_html"/>
+   <indexentry text="Search a  Job (Mail/Fax)" target="job_search_html" />      
+ </indexitem>
+
+ <indexitem text="User">
+   <indexentry text="Search a User" target="user_search_html" />
+   <indexentry text="Create a User" target="user_new_html" />
+   <indexentry text="Edit a User" target="user_edit_html" />
+   <indexentry text="Delete a User" target="user_delete_html" />       
+ </indexitem>
+
+ <indexitem text="Group">
+   <indexentry text="Search a Group" target="group_search_html" />
+   <indexentry text="Create a Group" target="group_new_html" />
+   <indexentry text="Edit a Group" target="group_edit_html" />
+   <indexentry text="Delete a Group" target="group_delete_html" />       
+ </indexitem>
+
+ <indexitem text="Theme">
+   <indexentry text="Search a Theme" target="theme_search_html" />
+   <indexentry text="Create a Theme" target="theme_new_html" />
+   <indexentry text="Edit a Theme" target="theme_edit_html" />
+   <indexentry text="Delete a Theme" target="theme_delete_html" />       
+ </indexitem>
+
+ <indexitem text="Adapters">
+   <indexentry text="Introduction to Adapters" target="adapters_introduction_html" />
+   <indexentry text="Adapters Preferences" target="adapters_preferences_html" />
+   <indexentry text="Voucher Status List" target="psvoucher_status_list_html" />
+   <indexentry text="Voucher Report" target="psvoucher_report_html" />
+ </indexitem>
+
+<indexitem text="Operations on Folder(s)/Document(s)">
+ <indexentry text="Introduction" target="folder_doc_introduction_html"/>
+        <indexentry text="Search  Folder(s)/Document(s)" target="folder_doc_search_html"/>
+        <indexentry text="Create a new Document" target="document_new_html" />
+        <indexentry text="Create a new Folder" target="folder_new_html" />
+        <indexentry text="Rename Folder(s)/Documents(s)"
+                 target="folder_doc_rename_html"/>
+        <indexentry text="Upload document(s)" target="document_upload_html"/>
+        <indexentry text="Download document(s)" target="document_download_html"/>
+        <indexentry text="Add Watch" target="add_watch_to_pos_html" />
+        <indexentry text="View As HTML" target="view_as_html" />
+        <indexentry text="Apply ACL to Folder(s)/Document(s)"
+                 target="folder_doc_apply_acl_html"/>
+        <indexentry text="View Property of Folder(s)/Document(s)"
+                 target="folder_doc_property_html"/>
+        <indexentry text="Generate links" target="document_generate_links_html"/>
+        <indexentry text="View Document Activity Log" target="document_view_log_html"/>        
+        <indexentry text="Cut, Copy, Paste Folder(s)/Document(s)"
+                 target="folder_doc_cut_copy_paste_html"/>
+        <indexentry text="Copy, Move Folder(s)/Document(s)"
+                 target="folder_doc_copy_move_html"/>
+        <indexentry text="Delete Folder(s)/Document(s)"
+                 target="folder_doc_delete_html"/>
+        <indexentry text="Check-Out Document(s)" target="document_versioned_html"/>
+        <indexentry text="Check-In Document(s)" target="document_versioned_html"/>
+        <indexentry text="Undo Check-Out Document(s)"
+                 target="document_versioned_html"/>
+        <indexentry text="Make Document(s) Versionable"
+                 target="document_versioned_html"/>
+        <indexentry text="View version history of Documents"
+                 target="document_versioned_html"/>
+        <indexentry text="Encrypt Document(s)"
+                 target="document_encrypt_decrypt_html"/>
+        <indexentry text="Decrypt Document(s)"
+                 target="document_encrypt_decrypt_html"/>
+        <indexentry text="Zip Folder(s)/Document(s)"
+                 target="folder_doc_zip_unzip_html"/>
+        <indexentry text="Un-Zip Folder(s)/Document(s)"
+                 target="folder_doc_zip_unzip_html"/>
+        <indexentry text="Submit Document To Workflow"
+                 target="submit_doc_to_workflow_html"/>
+    
+    </indexitem>
+
+ <indexitem text="Scheduler">
+   <indexentry text="Search a Job" target="job_search_html" />
+   <indexentry text="Create a Job" target="job_new_html" />
+   <indexentry text="Reschedule a Job" target="job_reschedule_html" />
+   <indexentry text="Delete a Job" target="job_delete_html" />       
+ </indexitem>
+
+ <indexitem text="Mail &amp; Fax">
+   <indexentry text="Create a Mail Job" target="mail_new_html" />
+   <indexentry text="Create a Fax Job" target="fax_new_html" />   
+ </indexitem>
+
+ <indexitem text="Workflow">
+   <indexentry text="Introduction to Workflow" target="introduction_to_workflow_html" />
+   <indexentry text="Using Workflow" target="using_workflow_html" />   
+ </indexitem>
+ 
+</index>

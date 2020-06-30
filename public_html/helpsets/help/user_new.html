@@ -1,0 +1,248 @@
+<HTML>
+<HEAD>
+<TITLE>Create User</TITLE>
+<link href="blafdoc.css" rel="stylesheet" type="text/css">
+</HEAD>
+<BODY>
+<table width="760" border="0">
+  <tr>
+    <td height="30" class="heading14bold">How To Create a User?</td>
+  </tr>
+  <tr>
+    <td><ul type=disc>
+      <li>You can create one user at a time.</li>
+    </ul>
+      <ul type=disc>
+        <li> Click on 'New User' Icon [ <img src="images/icons/butt_new_user.gif" width="18" height="17" align="absmiddle"> ] from the User List, New User Page appears with default settings. </li>
+    </ul></td>
+  </tr>
+  <tr>
+    <td><div align="center"><img src="images/user_new.gif"></div></td>
+  </tr>
+  <tr>
+    <td><b><u><div align="center">Create New User</div></b></u></td>
+  </tr>    
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="heading14bold">General User Information:</td>
+  </tr>
+</table>
+<table width="760" border="1" cellspacing="0" id=TABLE1 bordercolordark="#FFFFFF" bordercolorlight="#000000">
+ <tr>
+  <th width="90">Name</th>
+  <th width="70">Min Length</th>
+  <th width="70">Max Length</th>
+  <th width="369">Description</th>
+  <th width="139">Required /Optional</th>
+ </tr>
+ <tr>
+  <td>User Name</td>
+  <td>5</td>
+  <td>20</td>
+  <td >Unique Account Name for
+  the user. (Entries for the Home Folder and Mail folder for this user are derived
+  from the name.)</td>
+  <td >Required</td>
+ </tr>
+ <tr>
+  <td>Description</td>
+  <td>-</td>
+  <td>-</td>
+  <td>User's description.</td>
+  <td>Optional</td>
+ </tr>
+ <tr>
+  <td >Credential Manager</td>
+  <td>-</td>
+  <td>-</td>
+  <td >Select the appropriate
+  credential manager for the user from the drop-down list.(The list may only
+  include "Ifs," unless Oracle Internet Directory is being used as
+  well.)</td>
+  <td>Required </td>
+ </tr>
+ <tr>
+  <td>Access Control List</td>
+  <td>-</td>
+  <td>-</td>
+  <td>Access control list that will be applied by default to any objects created by this user.
+    <ul type=disc>
+      <li>Click on look-up next to Access Control List. </li>
+      <li>Access Control List will be displayed. </li>
+      <li>Select the Access Control List.</li> 
+      <li>Press 'Select' to select. </li>
+      <li>Press 'Cancel' to abort.</li>
+    </ul>
+  </td>
+  <td>Required</td>
+</tr>
+<tr>
+    <td>Password</td>
+    <td>	5</td>
+    <td>	20</td>
+    <td>	Password for the user.</td>
+    <td>	Required</td>
+  </tr>
+  <tr>
+    <td>Confirm  Password</td>
+    <td>5</td>
+    <td>20</td>
+    <td>Password for the user.</td><!--<td>Retype password for confirmation.</td>-->
+    <td>Required</td>
+  </tr>
+  <tr>
+  <td>
+  Status
+  </td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td>			
+    <ul>
+      <li>Select the type of account to create for the user, from among these three types.</li>
+      <li>Non-Admin users are regular users, non-administrative users they cannot change their passwords.</li>
+      <li>Admin users can create users, groups, themes and have access to other administration.</li>
+      <li>System Admin user accounts can do everything Admin users can do, plus they can start and stop the domain and nodes.</li>
+    </ul>
+	</td>
+  <td>	Required
+  </td>
+  </tr>
+  <tr>
+  <td>Add From Group List</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td>The add user to the Group, by default the user will belong to WORLD.
+    <ul>
+      <li>Click on the button 'Add From Group List'.</li> 
+      <li>Group list will be displayed.</li>
+      <li>Select the Group.(multiple selection is allowed.)</li>
+      <li>Press 'Select' button to add.</li>
+      <li>Press 'Cancel' button to abort.</li>
+    </ul>
+  </td>
+  <td>	Optional
+    (if not specified default WORLD group will be taken.)
+  </td>
+</tr>
+<tr>
+<td>
+  Remove From List
+</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>Select the Groups from the Group List.
+  <ul>
+    <li>Select the Group. (multiple selection is allowed.)</li>
+    <li>Click on the button 'Remove From Group List'.</li>
+  </ul>
+</td>
+<td>Optional</td></tr>
+<tr>
+  <td>Home Folder</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td>User's home folder location; 
+  <ul>
+  <li>Derived from the User Name entered on the page.</li>
+  <li>Or you can define the home folder.</li>	
+  </td>
+  <td>Optional
+  (if not specified default will be taken.)</td>
+</tr>
+<tr>
+<td>Quota</td><td>&nbsp;</td><td>&nbsp;</td><td>Disables or enables use of storage quota for the user. Specify the size in megabytes or set to unlimited if you don't want to limit the amount of storage consumed by the user.	</td><td>Required
+</td>
+</tr>
+<tr><td>
+Mail Folder</td><td>&nbsp;</td><td>&nbsp;</td><td>Folder name for the user's email.
+<ul>
+<li>Derived from the User Name entered on the page.</li>
+<li>Or you can define the mail folder.</li>
+</ul>
+</td><td>	Optional
+(if not specified default will be taken.)</td></tr><tr><td>
+Email Address</td><td>&nbsp;</td><td>&nbsp;</td><td>Enter email address constructed from the user name, plus an "@" symbol, plus the fully qualified company name.
+(suzy.jones@yourcompany.com).
+</td><td>Optional
+</td>
+</tr>
+<tr><td>
+Default Document Acl</td><td>&nbsp;</td><td>&nbsp;</td><td>The ACL that will be applied to any documents the user creates.
+<ul>
+<li>Click on look-up next to Access Control List.</li> 
+<li>Access Control List will be displayed</li>
+<li>Select the Access Control List.</li>
+<li>Press 'Select' to select.</li>
+<li>Press 'Cancel' to abort.</li>
+</ul>
+</td><td>Optional
+(if not specified default will be taken.)
+</td>
+</tr>
+<tr><td>
+Default Folder Acl</td><td>&nbsp;</td><td>&nbsp;</td><td>The ACL that will be applied to any folders the user creates.
+<ul><li>Click on look-up next to Access Control List.</li> 
+<li>Access Control List will be displayed</li>
+<li>Select the Access Control List.</li>
+<li>Press 'Select' to select.</li>
+<li>Press 'Cancel' to abort.</li></ul></td><td>Optional
+(if not specified default will be taken.)
+</td>
+</tr>
+<tr><td>
+Workflow Acl</td><td>&nbsp;</td><td>&nbsp;</td><td>The ACL that contains users who will have to approve/reject document submitted to workflow by the user.
+<ul><li>Click on look-up next to Access Control List.</li> 
+<li>Access Control List related to workflow will be displayed</li>
+<li>Select the Access Control List.</li>
+<li>Press 'Select' to select.</li>
+<li>Press 'Cancel' to abort.</li></ul></td><td>Required,if the user wishes to enable workflow.
+(if not specified none will be taken.)
+</tr>
+<tr><td>
+Language</td><td>&nbsp;</td><td>&nbsp;</td><td>Select the language from the list that this user's client applications will use while interacting.</td><td>Required
+</td>
+</tr>
+<tr><td>
+Character Set</td><td>&nbsp;</td><td>&nbsp;</td><td>Select the Character set required to display the selected language.</td><td>	Required
+</td>
+</tr>
+<tr><td>
+Locale</td><td>&nbsp;</td><td>&nbsp;</td><td>Select the Locale base on the selected language.</td><td>Required
+</td>
+</tr>
+<tr><td>
+Time Zone</td><td>&nbsp;</td><td>&nbsp;</td><td>Select the User's time zone.</td><td>Required
+</td>
+</tr>
+<tr><td>
+'Save' button</td><td>&nbsp;</td><td>&nbsp;</td><td>Press 'Save' to save the New User, the User will be saved and User list will appear with the message in the status Bar as "User 'Steffia' successfully saved".	
+</td><td>&nbsp;</td>
+</tr>
+<tr><td>
+'Cancel' button</td><td>&nbsp;</td><td>&nbsp;</td><td>Press 'Cancel' to abort New User creation.
+</td><td>&nbsp;</td>
+</tr>
+</table>
+
+<table width="760" border="0">
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><strong>Note:</strong></td>
+  </tr>
+  <tr>
+    <td>
+      <ul>
+        <li>A user's home folder is the default directory where a user starts when logging into the application.</li>
+        <li>The Email User Profile specifies the user's mail folder location and address.</li>
+        <li>Unless you change the default definitions, a user's e-mail folder is created under the home folder. <br>
+          For example, /home/jsmith/mail.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+</BODY>
+</HTML>

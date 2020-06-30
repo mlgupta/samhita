@@ -1,0 +1,1188 @@
+.buttons
+{
+    BORDER-RIGHT: #666666 1px solid;
+    BORDER-TOP: #666666 1px solid;
+    BORDER-BOTTOM: #666666 1px solid;
+    BORDER-LEFT: #666666 1px solid;
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 10px;
+    BACKGROUND-IMAGE:  url("butt_tile.gif");
+    BACKGROUND-REPEAT: repeat-x;
+    cursor: pointer; 
+    cursor: hand;
+
+}
+
+
+/* Following classes are for toolbar images in folder_doc_list.jsp****************************************************************/
+.imgAddWatch {
+	background-image: url("butt_watch_docs.gif");
+  width:26px; height:24px;
+	float:left;
+  cursor:pointer;
+  cursor:hand;
+}
+
+.imgAddWatchOver {
+	background-image: url("butt_watch_docs_over.gif");
+  width:26px; height:24px;
+	float:left;
+  cursor:pointer;
+  cursor:hand;
+}
+
+.imgAddWatchDisable {
+	background-image: url("butt_watch_docs_disable.gif");
+  width:26px; height:24px;
+	float:left;
+  cursor: pointer;
+  cursor: hand;
+}
+
+.imgDownload {
+	background-image: url("butt_dwnld.gif");
+  width:26px; height:24px;
+	float:left;
+}
+.imgDownloadOver {
+	background-image: url("butt_dwnld_over.gif");
+  width:26px; height:24px;
+	float:left;
+  cursor: pointer; 
+  cursor: hand;
+}
+.imgDownloadDisable {
+	background-image: url("butt_dwnld_disable.gif");
+  width:26px; height:24px;
+	float:left;
+}
+
+.imgBack {
+	background-image: url("butt_back.gif");
+  width:26px; height:24px;
+	float:left;
+}
+.imgBackOver {
+	background-image: url("butt_back_over.gif");
+  width:26px; height:24px;
+	float:left;
+  cursor: pointer; 
+  cursor: hand;
+}
+.imgBackDisable {
+	background-image: url("butt_back_disable.gif");
+  width:26px; height:24px;
+	float:left;
+}
+.imgForward {
+	background-image: url("butt_forward.gif");
+  width:26px; height:24px;
+	float:left;
+}
+.imgForwardOver {
+	background-image: url("butt_forward_over.gif");
+  width:26px; height:24px;
+	float:left;
+  cursor: pointer; 
+  cursor: hand;  
+}
+.imgForwardDisable {
+	background-image: url("butt_forward_disable.gif");
+  width:26px; height:24px;
+	float:left;
+}
+.imgGoUp {
+	background-image: url("butt_go_up.gif");
+  width:26px; height:24px;
+	float:left;
+}
+.imgGoUpOver {
+	background-image: url("butt_go_up_over.gif");
+  width:26px; height:24px;
+	float:left;
+  cursor: pointer; 
+  cursor: hand;  
+}
+.imgGoUpDisable {
+	background-image: url("butt_go_up_disable.gif");
+  width:26px; height:24px;
+	float:left;
+}
+.imgSearch {
+	background-image: url("butt_search.gif");
+  width:34px; height:24px;
+	float:left;
+}
+.imgSearchOver {
+	background-image: url("butt_search_over.gif");
+  width:34px; height:24px;
+	float:left;
+  cursor: pointer; 
+  cursor: hand;  
+}
+.imgRefresh {
+	background-image: url("butt_refresh.gif");
+  width:30px; height:24px;
+	float:left;
+}
+.imgRefreshOver {
+	background-image: url("butt_refresh_over.gif");
+  width:30px; height:24px;
+	float:left;
+  cursor: pointer; 
+  cursor: hand;  
+}
+.imgCopy {
+	background-image: url("butt_copy.gif");
+  width:26px; height:24px;
+	float:left;
+}
+.imgCopyOver {
+	background-image: url("butt_copy_over.gif");
+  width:26px; height:24px;
+	float:left;
+  cursor: pointer; 
+  cursor: hand;  
+}
+.imgCopyDisable {
+	background-image: url("butt_copy_disable.gif");
+  width:26px; height:24px;
+	float:left;
+}
+.imgCut {
+	background-image: url("butt_cut.gif");
+  width:26px; height:24px;
+	float:left;
+}
+.imgCutOver {
+	background-image: url("butt_cut_over.gif");
+  width:26px; height:24px;
+	float:left;
+  cursor: pointer; 
+  cursor: hand;  
+}
+.imgCutDisable {
+	background-image: url("butt_cut_disable.gif");
+  width:26px; height:24px;
+	float:left;
+}
+.imgPaste {
+	background-image: url("butt_paste.gif");
+  width:26px; height:24px;
+	float:left;
+}
+.imgPasteOver {
+	background-image: url("butt_paste_over.gif");
+  width:26px; height:24px;
+	float:left;
+  cursor: pointer; 
+  cursor: hand;  
+}
+.imgPasteDisable {
+	background-image: url("butt_paste_disable.gif");
+  width:26px; height:24px;
+	float:left;
+}
+.imgCopyTo {
+	background-image: url("butt_copy_to.gif");
+  width:30px; height:24px;
+	float:left;
+}
+.imgCopyToOver {
+	background-image: url("butt_copy_to_over.gif");
+  width:30px; height:24px;
+	float:left;
+  cursor: pointer; 
+  cursor: hand;  
+}
+.imgCopyToDisable {
+	background-image: url("butt_copy_to_disable.gif");
+  width:30px; height:24px;
+	float:left;
+}
+.imgMoveTo {
+	background-image: url("butt_move_to.gif");
+  width:30px; height:24px;
+	float:left;
+}
+.imgMoveToOver {
+	background-image: url("butt_move_to_over.gif");
+  width:30px; height:24px;
+	float:left;
+  cursor: pointer; 
+  cursor: hand;  
+}
+.imgMoveToDisable {
+	background-image: url("butt_move_to_disable.gif");
+  width:30px; height:24px;
+	float:left;
+}
+.imgRename {
+	background-image: url("butt_rename.gif");
+  width:30px; height:24px;
+	float:left;
+}
+.imgRenameOver {
+	background-image: url("butt_rename_over.gif");
+  width:30px; height:24px;
+	float:left;
+  cursor: pointer; 
+  cursor: hand;  
+}
+.imgRenameDisable {
+	background-image: url("butt_rename_disable.gif");
+  width:30px; height:24px;
+	float:left;
+}
+.imgDeleteFolder {
+	background-image: url("butt_delete_folder.gif");
+  width:30px; height:24px;
+	float:left;
+}
+.imgDeleteFolderOver {
+	background-image: url("butt_delete_folder_over.gif");
+  width:30px; height:24px;
+	float:left;
+  cursor: pointer; 
+  cursor: hand;  
+}
+.imgDeleteFolderDisable {
+	background-image: url("butt_delete_folder_disable.gif");
+  width:30px; height:24px;
+	float:left;
+}
+.imgNewFolder {
+	background-image: url("butt_new_folder.gif");
+  width:30px; height:24px;
+	float:left;
+}
+.imgNewFolderOver {
+	background-image: url("butt_new_folder_over.gif");
+  width:30px; height:24px;
+	float:left;
+  cursor: pointer; 
+  cursor: hand;
+}
+.imgNewFolderDisable {
+	background-image: url("butt_new_folder_disable.gif");
+  width:30px; height:24px;
+	float:left;
+}
+.imgChkIn {
+	background-image: url("butt_chkin.gif");
+  width:34px; height:24px;
+	float:left;
+}
+.imgChkInOver {
+	background-image: url("butt_chkin_over.gif");
+  width:34px; height:24px;
+	float:left;
+  cursor: pointer; 
+  cursor: hand;  
+}
+.imgChkInDisable {
+	background-image: url("butt_chkin_disable.gif");
+  width:34px; height:24px;
+	float:left;
+}
+.imgChkOut {
+	background-image: url("butt_chk_out.gif");
+  width:34px; height:24px;
+	float:left;
+}
+.imgChkOutOver {
+	background-image: url("butt_chk_out_over.gif");
+  width:34px; height:24px;
+	float:left;
+  cursor: pointer; 
+  cursor: hand;  
+}
+.imgChkOutDisable {
+	background-image: url("butt_chk_out_disable.gif");
+  width:34px; height:24px;
+	float:left;
+}
+.imgUndoChkOut {
+	background-image: url("butt_undo_chkout.gif");
+  width:34px; height:24px;
+	float:left;
+}
+.imgUndoChkOutOver {
+	background-image: url("butt_undo_chkout_over.gif");
+  width:34px; height:24px;
+	float:left;
+  cursor: pointer; 
+  cursor: hand;  
+}
+.imgUndoChkOutDisable{
+	background-image: url("butt_undo_chkout_disable.gif");
+  width:34px; height:24px;
+	float:left;
+}
+.imgVersionable {
+	background-image: url("butt_version.gif");
+  width:34px; height:24px;
+	float:left;
+}
+.imgVersionableOver {
+	background-image: url("butt_version_over.gif");
+  width:34px; height:24px;
+	float:left;
+  cursor: pointer; 
+  cursor: hand;  
+}
+.imgVersionableDisable {
+	background-image: url("butt_version_disable.gif");
+  width:34px; height:24px;
+	float:left;
+}
+
+.imgVersionDelete {
+	background-image: url("butt_version_delete.gif");
+  width:34px; height:24px;
+	float:left;
+}
+.imgVersionDeleteOver {
+	background-image: url("butt_version_delete_over.gif");
+  width:34px; height:24px;
+	float:left;
+  cursor: pointer; 
+  cursor: hand;  
+}
+.imgVersionDetail {
+	background-image: url("butt_version_detail.gif");
+  width:34px; height:24px;
+	float:left;
+}
+.imgVersionDetailOver {
+	background-image: url("butt_version_detail_over.gif");
+  width:34px; height:24px;
+	float:left;
+  cursor: pointer; 
+  cursor: hand;  
+}
+.imgVersionRollBack {
+	background-image: url("butt_version_rollbk.gif");
+  width:34px; height:24px;
+	float:left;
+}
+.imgVersionRollBackOver {
+	background-image: url("butt_version_rollbk_over.gif");
+  width:34px; height:24px;
+	float:left;
+  cursor: pointer; 
+  cursor: hand;  
+}
+
+.imgUpload {
+	background-image: url("butt_upload.gif");
+  width:30px; height:24px;
+	float:left;
+}
+.imgUploadOver {
+	background-image: url("butt_upload_over.gif");
+  width:30px; height:24px;
+	float:left;
+  cursor: pointer; 
+  cursor: hand;  
+}
+.imgUploadDisable {
+	background-image: url("butt_upload_disable.gif");
+  width:30px; height:24px;
+	float:left;
+}
+.imgApplyACL {
+	background-image: url("butt_apply_acl.gif");
+  width:34px; height:24px;
+	float:left;
+}
+.imgApplyACLOver {
+	background-image: url("butt_apply_acl_over.gif");
+  width:34px; height:24px;
+	float:left;
+  cursor: pointer; 
+  cursor: hand;  
+}
+.imgApplyACLDisable {
+	background-image: url("butt_apply_acl_disable.gif");
+  width:34px; height:24px;
+	float:left;
+}
+.imgProperty {
+	background-image: url("butt_property.gif");
+  width:26px; height:24px;
+	float:left;
+}
+.imgPropertyOver {
+	background-image: url("butt_property_over.gif");
+  width:26px; height:24px;
+	float:left;
+  cursor: pointer; 
+  cursor: hand;  
+}
+.imgPropertyDisable {
+	background-image: url("butt_property_disable.gif");
+  width:26px; height:24px;
+	float:left;
+}
+.imgHistory {
+	background-image: url("butt_history.gif");
+   width:26px; height:24px;
+	float:left;
+}
+.imgHistoryOver {
+	background-image: url("butt_history_over.gif");
+  width:26px; height:24px;
+	float:left;
+  cursor: pointer; 
+  cursor: hand;  
+}
+.imgHistoryDisable {
+	background-image: url("butt_history_disable.gif");
+   width:26px; height:24px;
+	float:left;
+}
+.imgFolder{
+	background-image: url("folder.gif");
+  width:15px; height:13px;
+	float:left;
+  margin-left:2px;
+  margin-right:4px;
+}
+.imgFolderDoc{
+	background-image: url("document.gif");
+  width:15px; height:13px;
+	float:left;
+  margin-left:2px;
+  margin-right:4px;
+}
+
+.imgDocument{
+	background-image: url("document.gif");
+  width:15px; height:13px;
+	float:left;
+  margin-left:2px;
+  margin-right:4px;
+}
+.imgDocuments{
+	background-image: url("documents.gif");
+  width:15px; height:13px;
+	float:left;
+  margin-left:2px;
+  margin-right:4px;
+}
+
+.imgDocumentChecked{
+	background-image: url("versionable_checked.gif");
+  width:15px; height:13px;
+	float:left;
+  margin-left:2px;
+  margin-right:4px;
+}
+
+.imgDocumentEncrypted {
+	background-image: url("document_encrypted.gif");
+    width:15px; height:13px;
+	float:left;
+    margin-left:2px;
+    margin-right:4px;
+}
+
+.imgDocumentZipped{
+	background-image: url("document_zipped.gif");
+    width:15px; height:13px;
+	float:left;
+    margin-left:2px;
+    margin-right:4px;
+}
+
+.imgGoUpDataTbl {
+	background-image: url("go_up.gif");
+  width:15px; height:13px;
+	float:left;
+  cursor: pointer; 
+  cursor: hand;
+}
+.imgGoUpDataTblDisable {
+	background-image: url("go_up_disable.gif");
+  width:15px; height:13px;
+	float:left;
+}
+
+.imgEncrypt {
+	background-image: url("butt_encrypt.gif");
+  width:34px; height:24px;
+	float:left;
+}
+.imgEncryptOver {
+	background-image: url("butt_encrypt_over.gif");
+  width:34px; height:24px;
+	float:left;
+  cursor: pointer; 
+  cursor: hand;  
+}
+.imgEncryptDisable {
+	background-image: url("butt_encrypt_disable.gif");
+  width:34px; height:24px;
+	float:left;
+}
+
+.imgDecrypt {
+	background-image: url("butt_decrypt.gif");
+  width:34px; height:24px;
+	float:left;
+}
+.imgDecryptOver {
+	background-image: url("butt_decrypt_over.gif");
+  width:34px; height:24px;
+	float:left;
+  cursor: pointer; 
+  cursor: hand;  
+}
+.imgDecryptDisable {
+	background-image: url("butt_decrypt_disable.gif");
+  width:34px; height:24px;
+	float:left;
+}
+
+.imgZip {
+	background-image: url("butt_zip.gif");
+  width:34px; height:24px;
+	float:left;
+}
+.imgZipOver {
+	background-image: url("butt_zip_over.gif");
+  width:34px; height:24px;
+	float:left;
+  cursor: pointer; 
+  cursor: hand;  
+}
+.imgZipDisable {
+	background-image: url("butt_unzip_disable.gif");
+  width:34px; height:24px;
+	float:left;
+}
+.imgUnZip {
+	background-image: url("butt_unzip.gif");
+  width:34px; height:24px;
+	float:left;
+}
+.imgUnZipOver {
+	background-image: url("butt_unzip_over.gif");
+  width:34px; height:24px;
+	float:left;
+  cursor: pointer; 
+  cursor: hand;
+}
+.imgUnZipDisable {
+	background-image: url("butt_unzip_disable.gif");
+  width:34px; height:24px;
+	float:left;
+}
+.imgMailTo {
+	background-image: url("butt_mail_to.gif");
+  width:26px; height:24px;
+	float:left;
+}
+.imgMailToOver {
+	background-image: url("butt_mail_to_over.gif");
+  width:26px; height:24px;
+	float:left;
+  cursor: pointer; 
+  cursor: hand;  
+}
+.imgMailToDisable {
+	background-image: url("butt_mail_to_disable.gif");
+  width:26px; height:24px;
+	float:left;
+}
+.imgFaxTo {
+	background-image: url("butt_fax_to.gif");
+  width:26px; height:24px;
+	float:left;
+}
+.imgFaxToOver {
+	background-image: url("butt_fax_to_over.gif");
+  width:26px; height:24px;
+	float:left;
+  cursor: pointer; 
+  cursor: hand;  
+}
+.imgFaxToDisable {
+	background-image: url("butt_fax_to_disable.gif");
+  width:26px; height:24px;
+	float:left;
+}
+
+.imgViewLog {
+	background-image: url("butt_view_log.gif");
+  width:26px; height:24px;
+	float:left;
+}
+.imgViewLogOver {
+	background-image: url("butt_view_log_over.gif");
+  width:26px; height:24px;
+	float:left;
+  cursor: pointer; 
+  cursor: hand;  
+}
+.imgViewLogDisable {
+	background-image: url("butt_view_log_disable.gif");
+  width:26px; height:24px;
+	float:left;
+}
+.imgGenerateLink {
+	background-image: url("butt_generate_link.gif");
+  width:26px; height:24px;
+	float:left;
+}
+.imgGenerateLinkOver {
+	background-image: url("butt_generate_link_over.gif");
+  width:26px; height:24px;
+	float:left;
+  cursor: pointer; 
+  cursor: hand;  
+}
+.imgGenerateLinkDisable {
+	background-image: url("butt_generate_link_disable.gif");
+  width:26px; height:24px;
+	float:left;
+}
+.imgUserHome {
+	background-image: url("butt_user_home.gif");
+  width:30px; height:24px;
+	float:left;
+}
+.imgUserHomeOver {
+	background-image: url("butt_user_home_over.gif");
+  width:30px; height:24px;
+	float:left;
+  cursor: pointer; 
+  cursor: hand;  
+}
+.imgViewHtml {
+	background-image: url("butt_view_html.gif");
+  width:30px; height:24px;
+	float:left;
+}
+.imgViewHtmlOver {
+	background-image: url("butt_view_html_over.gif");
+  width:30px; height:24px;
+	float:left;
+  cursor: pointer; 
+  cursor: hand;  
+}
+.imgViewHtmlDisable {
+	background-image: url("butt_view_html_disable.gif");
+  width:30px; height:24px;
+	float:left;
+}
+.imgDocEdit {
+	background-image: url("doc_edit.gif");
+  width:15px; height:13px;
+  border:0px;
+  cursor: pointer; 
+  cursor: hand; 
+  float:left;
+  margin-left:0px;
+}
+
+.imgDocEditDisable {
+	background-image: url("doc_edit_disabled.gif");
+  width:15px; height:13px;
+  border:0px;
+}
+
+.imgNewDoc {
+	background-image: url("butt_new_doc.gif");
+	width:30px; height:24px;
+	float:left;
+}
+.imgNewDocOver {
+	background-image: url("butt_new_doc_over.gif");
+	width:30px; height:24px;
+	float:left;
+	cursor: pointer; 
+	cursor: hand;
+}
+.imgNewDocDisable {
+	background-image: url("butt_new_doc_disable.gif");
+	width:30px; height:24px;
+	float:left;
+}
+.iconWord {
+	background-image: url("icon_word.gif");
+	background-repeat: no-repeat;
+	background-position: 2px 2px;
+	width:26px; height:26px;
+	border: 1px solid #999999 ;
+	float:left;  
+}
+.iconWordOver {
+	background-image: url("icon_word.gif");
+	background-repeat: no-repeat;
+	background-position: 2px 2px;
+	width:26px; height:26px;
+	float:left;  
+	border: 1px outset ;
+	cursor: pointer; 
+	cursor: hand;
+}
+.iconExcel {
+	background-image: url("icon_excel.gif");
+	background-repeat: no-repeat;
+	background-position: 2px 2px;
+	width:26px; height:26px;
+	border: 1px solid #999999 ;
+	float:left;  
+}
+.iconExcelOver {
+	background-image: url("icon_excel.gif");
+	background-repeat: no-repeat;
+	background-position: 2px 2px;
+	width:26px; height:26px;
+	float:left;  
+	border: 1px outset ;
+	cursor: pointer; 
+	cursor: hand;
+}
+.iconPpt {
+	background-image: url("icon_ppt.gif");
+	background-repeat: no-repeat;
+	background-position: 2px 2px;
+	width:26px; height:26px;
+	border: 1px solid #999999 ;
+	float:left;  
+}
+.iconPptOver {
+	background-image: url("icon_ppt.gif");
+	background-repeat: no-repeat;
+	background-position: 2px 2px;
+	width:26px; height:26px;
+	float:left;  
+	border: 1px outset ;
+	cursor: pointer; 
+	cursor: hand;
+}
+.iconTxt {
+	background-image: url("icon_txt.gif");
+	background-repeat: no-repeat;
+	background-position: 2px 2px;
+	width:26px; height:26px;
+	border: 1px solid #999999 ;
+	float:left;  
+}
+.iconTxtOver {
+	background-image: url("icon_txt.gif");
+	background-repeat: no-repeat;
+	background-position: 2px 2px;
+	width:26px; height:26px;
+	float:left;  
+	border: 1px outset ;
+	cursor: pointer; 
+	cursor: hand;
+}
+.iconVisio {
+	background-image: url("icon_visio.gif");
+	background-repeat: no-repeat;
+	background-position: 2px 2px;
+	width:26px; height:26px;
+	border: 1px solid #999999 ;
+	float:left;  
+}
+.iconVisioOver {
+	background-image: url("icon_visio.gif");
+	background-repeat: no-repeat;
+	background-position: 2px 2px;
+	width:26px; height:26px;
+	float:left;  
+	border: 1px outset ;
+	cursor: pointer; 
+	cursor: hand;
+}
+
+
+/* Following classes are for images in user_list.jsp ****************************************************************/
+.imgDefUser {
+	background-image: url("butt_def_user.gif");
+  width:26px; height:24px;
+	float:left;
+}
+.imgDefUserOver {
+	background-image: url("butt_def_user_over.gif");
+  width:26px; height:24px;
+	float:left;
+  cursor: pointer; 
+  cursor: hand;  
+}
+
+.imgNewUser {
+	background-image: url("butt_new_user.gif");
+  width:34px; height:24px;
+	float:left;
+}
+.imgNewUserOver {
+	background-image: url("butt_new_user_over.gif");
+  width:34px; height:24px;
+	float:left;
+  cursor: pointer; 
+  cursor: hand;  
+}
+
+.imgEditUser {
+	background-image: url("butt_edit_user.gif");
+  width:34px; height:24px;
+	float:left;
+}
+.imgEditUserOver {
+	background-image: url("butt_edit_user_over.gif");
+  width:34px; height:24px;
+	float:left;
+  cursor: pointer; 
+  cursor: hand;  
+}
+
+.imgDeleteUser {
+	background-image: url("butt_delete_user.gif");
+  width:34px; height:24px;
+	float:left;
+}
+.imgDeleteUserOver {
+	background-image: url("butt_delete_user_over.gif");
+  width:34px; height:24px;
+	float:left;
+  cursor: pointer; 
+  cursor: hand;  
+}
+/* Following classes are for images in group_list.jsp ****************************************************************/
+.imgNewGroup {
+	background-image: url("butt_new_group.gif");
+  width:34px; height:24px;
+	float:left;
+}
+.imgNewGroupOver {
+	background-image: url("butt_new_group_over.gif");
+  width:34px; height:24px;
+	float:left;
+  cursor: pointer; 
+  cursor: hand;  
+}
+
+.imgEditGroup {
+	background-image: url("butt_edit_group.gif");
+  width:34px; height:24px;
+	float:left;
+}
+.imgEditGroupOver {
+	background-image: url("butt_edit_group_over.gif");
+  width:34px; height:24px;
+	float:left;
+  cursor: pointer; 
+  cursor: hand;  
+}
+
+.imgDeleteGroup {
+	background-image: url("butt_delete_group.gif");
+    width:34px; height:24px;
+	float:left;
+}
+.imgDeleteGroupOver {
+	background-image: url("butt_delete_group_over.gif");
+  width:34px; height:24px;
+	float:left;
+  cursor: pointer; 
+  cursor: hand;  
+}
+/* Following classes are for images in acl_list.jsp ****************************************************************/
+.imgNewACL {
+	background-image: url("butt_new_acl.gif");
+    width:34px; height:24px;
+	float:left;
+}
+.imgNewACLOver {
+	background-image: url("butt_new_acl_over.gif");
+  width:34px; height:24px;
+	float:left;
+  cursor: pointer; 
+  cursor: hand;  
+}
+.imgEditACL {
+	background-image: url("butt_edit_acl.gif");
+  width:34px; height:24px;
+	float:left;
+}
+.imgEditACLOver {
+	background-image: url("butt_edit_acl_over.gif");
+  width:34px; height:24px;
+	float:left;
+  cursor: pointer; 
+  cursor: hand;  
+}
+.imgDeleteACL {
+	background-image: url("butt_delete_acl.gif");
+  width:34px; height:24px;
+	float:left;
+}
+.imgDeleteACLOver {
+	background-image: url("butt_delete_acl_over.gif");
+  width:34px; height:24px;
+	float:left;
+  cursor: pointer; 
+  cursor: hand;  
+}
+
+/* Following classes are for images in permission_list.jsp ****************************************************************/
+.imgNewPermission {
+	background-image: url("butt_new_permission.gif");
+  width:34px; height:24px;
+	float:left;
+}
+.imgNewPermissionOver {
+	background-image: url("butt_new_permission_over.gif");
+  width:34px; height:24px;
+	float:left;
+  cursor: pointer; 
+  cursor: hand;  
+}
+.imgEditPermission {
+	background-image: url("butt_edit_permission.gif");
+  width:34px; height:24px;
+	float:left;
+}
+.imgEditPermissionOver {
+	background-image: url("butt_edit_permission_over.gif");
+  width:34px; height:24px;
+	float:left;
+  cursor: pointer; 
+  cursor: hand;  
+}
+.imgDeletePermission {
+	background-image: url("butt_delete_permission.gif");
+  width:34px; height:24px;
+	float:left;
+}
+.imgDeletePermissionOver {
+	background-image: url("butt_delete_permission_over.gif");
+  width:34px; height:24px;
+	float:left;
+  cursor: pointer; 
+  cursor: hand;  
+}
+
+/* Following classes are for images in theme_list.jsp ****************************************************************/
+.imgNewTheme {
+	background-image: url("butt_new_theme.gif");
+  width:34px; height:24px;
+	float:left;
+}
+.imgNewThemeOver {
+	background-image: url("butt_new_theme_over.gif");
+  width:34px; height:24px;
+	float:left;
+  cursor: pointer; 
+  cursor: hand;  
+}
+.imgEditTheme {
+	background-image: url("butt_edit_theme.gif");
+  width:34px; height:24px;
+	float:left;
+}
+.imgEditThemeOver {
+	background-image: url("butt_edit_theme_over.gif");
+  width:34px; height:24px;
+	float:left;
+  cursor: pointer; 
+  cursor: hand;  
+}
+.imgDeleteTheme {
+	background-image: url("butt_delete_theme.gif");
+  width:34px; height:24px;
+	float:left;
+}
+.imgDeleteThemeOver {
+	background-image: url("butt_delete_theme_over.gif");
+  width:34px; height:24px;
+	float:left;
+  cursor: pointer; 
+  cursor: hand;
+}
+
+
+/* Following classes are for images in scheduler_list.jsp ****************************************************************/
+
+.imgSchedulerDelete {
+	background-image: url("butt_scheduler_delete.gif");
+  width:34px; height:24px;
+	float:left;
+}
+.imgSchedulerDeleteOver {
+	background-image: url("butt_scheduler_delete_over.gif");
+  width:34px; height:24px;
+	float:left;
+  cursor: pointer; 
+  cursor: hand;  
+}
+.imgSchedulerDelete {
+	background-image: url("butt_scheduler_delete.gif");
+  width:34px; height:24px;
+	float:left;
+}
+.imgSchedulerDeleteOver {
+	background-image: url("butt_scheduler_delete_over.gif");
+  width:34px; height:24px;
+	float:left;
+  cursor: pointer; 
+  cursor: hand;  
+}
+.imgSchedulerRe {
+	background-image: url("butt_scheduler_re.gif");
+  width:34px; height:24px;
+	float:left;
+}
+.imgSchedulerReOver {
+	background-image: url("butt_scheduler_re_over.gif");
+  width:34px; height:24px;
+	float:left;
+  cursor: pointer; 
+  cursor: hand;  
+}
+
+.imgSchedulerStart{
+	background-image: url("butt_scheduler_start.gif");
+  width:34px; height:24px;
+	float:left;
+}
+.imgSchedulerStartOver {
+	background-image: url("butt_scheduler_start_over.gif");
+  width:34px; height:24px;
+	float:left;
+  cursor: pointer; 
+  cursor: hand;  
+}
+.imgSchedulerStop{
+	background-image: url("butt_scheduler_stop.gif");
+  width:34px; height:24px;
+	float:left;
+}
+.imgSchedulerStopOver {
+	background-image: url("butt_scheduler_stop_over.gif");
+  width:34px; height:24px;
+	float:left;
+  cursor: pointer; 
+  cursor: hand;  
+}
+
+/* Following classes are for toolbar images in Help****************************************************************/
+.imgHelp{
+	background-image: url("butt_help.gif");
+  width:26px; height:24px;
+	float:left;
+  cursor: pointer; 
+  cursor: hand;  
+}
+.imgHelpOver {
+	background-image: url("butt_help_over.gif");
+  width:26px; height:24px;
+	float:left;
+  cursor: pointer; 
+  cursor: hand;  
+}
+/* Following classes are for toolbar images in workflow****************************************************************/
+.imgMyNotification {
+	background-image: url("butt_notify_details.gif");
+  width:30px; height:24px;
+	float:left;
+}
+.imgMyNotificationOver {
+	background-image: url("butt_notify_details_over.gif");
+  width:30px; height:24px;
+	float:left;
+  cursor: pointer; 
+  cursor: hand;  
+}
+.imgMyNotificationDisable {
+	background-image: url("butt_notify_details_disable.gif");
+  width:30px; height:24px;
+	float:left;
+}
+.imgNotificationDelete {
+	background-image: url("butt_notify_delete.gif");
+  width:30px; height:24px;
+	float:left;
+}
+.imgNotificationDeleteOver {
+	background-image: url("butt_notify_delete_over.gif");
+  width:30px; height:24px;
+	float:left;
+  cursor: pointer; 
+  cursor: hand;  
+}
+.imgNotificationDeleteDisable {
+	background-image: url("butt_notify_delete_disable.gif");
+  width:30px; height:24px;
+	float:left;
+}
+
+.imgWorkflowSubmit {
+	background-image: url("butt_workflow_submit.gif");
+  width:30px; height:24px;
+	float:left;
+}
+.imgWorkflowSubmitOver {
+	background-image: url("butt_workflow_submit_over.gif");
+  width:30px; height:24px;
+	float:left;
+  cursor: pointer; 
+  cursor: hand;  
+}
+.imgWorkflowSubmitDisable {
+	background-image: url("butt_workflow_submit_disable.gif");
+  width:30px; height:24px;
+	float:left;
+}
+.imgResetInvoice {
+	background-image: url("butt_reset_invoice.gif");
+  width:26px; height:24px;
+	float:left;
+}
+.imgResetInvoiceOver {
+	background-image: url("butt_reset_invoice_over.gif");
+  width:26px; height:24px;
+	float:left;
+  cursor: pointer; 
+  cursor: hand;  
+}
+.imgResetInvoiceDisable {
+	background-image: url("butt_reset_invoice_disable.gif");
+  width:26px; height:24px;
+	float:left;
+}
+.imgDeleteInvoice {
+	background-image: url("butt_delete_invoice.gif");
+  width:26px; height:24px;
+	float:left;
+}
+.imgDeleteInvoiceOver {
+	background-image: url("butt_delete_invoice_over.gif");
+  width:26px; height:24px;
+	float:left;
+  cursor: pointer; 
+  cursor: hand;  
+}
+.imgDeleteInvoiceDisable {
+	background-image: url("butt_delete_invoice_disable.gif");
+  width:26px; height:24px;
+	float:left;
+}
+.borderLeft666666{
+BORDER-LEFT: #666666 1px solid;
+}
+.borderRight666666{
+BORDER-RIGHT: #666666 1px solid;
+}
+.borderTop666666{
+BORDER-TOP: #666666 1px solid;
+}
+.borderBottom666666{
+BORDER-BOTTOM: #666666 1px solid;
+}

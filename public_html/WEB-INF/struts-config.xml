@@ -1,0 +1,1024 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+<struts-config>
+
+  <form-beans>
+
+    <!-- Login -->
+    <form-bean name="loginForm" type="dms.web.actionforms.loginout.LoginForm"/>
+
+    <!-- Scheduler Forms-->
+    <form-bean name="mailForm" type="dms.web.actionforms.mail.MailForm"/>
+    <form-bean name="faxForm" type="dms.web.actionforms.fax.FaxForm"/>
+
+     <!-- Folder and Document -->
+    <form-bean name="advanceSearchForm" type="dms.web.actionforms.filesystem.AdvanceSearchForm"/>
+    <form-bean name="folderDocApplyAclForm" type="dms.web.actionforms.filesystem.FolderDocApplyAclForm"/>
+    <form-bean name="docHistoryListForm" type="dms.web.actionforms.filesystem.DocHistoryListForm"/>
+    <!-- <form-bean name="docUploadForm" type="dms.web.actionforms.filesystem.DocUploadForm"/> -->
+    <form-bean name="folderDocCopyMoveForm" type="dms.web.actionforms.filesystem.FolderDocCopyMoveForm"/>
+    <form-bean name="folderDocPasteForm" type="dms.web.actionforms.filesystem.FolderDocPasteForm"/>
+    <form-bean name="folderDocListForm" type="dms.web.actionforms.filesystem.FolderDocListForm"/>
+    <form-bean name="folderDocRenameForm" type="dms.web.actionforms.filesystem.FolderDocRenameForm"/>
+    <form-bean name="folderNewForm" type="dms.web.actionforms.filesystem.FolderNewForm"/>
+    <form-bean name="folderDocPropertyForm" type="dms.web.actionforms.filesystem.FolderDocPropertyForm"/>
+    <form-bean name="folderDocCheckOutForm" type="dms.web.actionforms.filesystem.FolderDocCheckOutForm"/>
+    <form-bean name="folderDocCheckInForm" type="dms.web.actionforms.filesystem.FolderDocCheckInForm"/>
+    <form-bean name="folderDocSelectForm" type="dms.web.actionforms.filesystem.FolderDocSelectForm"/>
+    <form-bean name="docEncryptForm" type="dms.web.actionforms.filesystem.DocEncryptForm"/>
+    <form-bean name="docDecryptForm" type="dms.web.actionforms.filesystem.DocDecryptForm"/>
+    <form-bean name="docFaxForm" type="dms.web.actionforms.filesystem.DocFaxForm"/>
+    <form-bean name="docLogListForm" type="dms.web.actionforms.filesystem.DocLogListForm"/>
+    <form-bean name="docMailForm" type="dms.web.actionforms.filesystem.DocMailForm"/>
+    <form-bean name="docZipForm" type="dms.web.actionforms.filesystem.DocZipForm"/>
+    <form-bean name="docUnZipForm" type="dms.web.actionforms.filesystem.DocUnZipForm"/>
+    <form-bean name="docViewLogForm" type="dms.web.actionforms.filesystem.DocViewLogForm"/>
+    <form-bean name="linkDetailsForm" type="dms.web.actionforms.filesystem.LinkDetailsForm"/>
+    <form-bean name="newDocUploadForm" type="dms.web.actionforms.filesystem.NewDocUploadForm"/>
+    <form-bean name="showContentForm" type="dms.web.actionforms.filesystem.ShowContentForm"/>
+    <form-bean name="docNewForm" type="dms.web.actionforms.filesystem.DocNewForm"/>
+     <!-- Group Forms-->
+    <form-bean name="groupListForm" type="dms.web.actionforms.group.GroupListForm"/>
+    <form-bean name="groupListSelectForm" type="dms.web.actionforms.group.GroupListSelectForm"/>
+    <form-bean name="groupNewEditForm" type="dms.web.actionforms.group.GroupNewEditForm"/>
+
+    <!-- Preference Forms-->
+    <form-bean name="userPreferenceProfileForm" type="dms.web.actionforms.preferences.UserPreferenceProfileForm"/>
+    <form-bean name="userPreferenceProfileForm4ThemePreview" type="dms.web.actionforms.preferences.UserPreferenceProfileForm"/>
+
+    <!-- Theme Form -->
+    <form-bean name="themeListForm" type="dms.web.actionforms.theme.ThemeListForm"/>
+    <form-bean name="themeNewEditForm" type="dms.web.actionforms.theme.ThemeNewEditForm"/>
+    <form-bean name="themeNewEditForm4Preview" type="dms.web.actionforms.theme.ThemeNewEditForm"/>
+
+    <!-- User Forms-->
+    <form-bean name="userDefaultDefForm" type="dms.web.actionforms.user.UserDefaultDefForm"/>
+    <form-bean name="userListForm" type="dms.web.actionforms.user.UserListForm"/>
+    <form-bean name="userListSelectForm" type="dms.web.actionforms.user.UserListSelectForm"/>
+    <form-bean name="userNewEditForm" type="dms.web.actionforms.user.UserNewEditForm"/>
+    <form-bean name="changePasswordForm" type="dms.web.actionforms.user.ChangePasswordForm"/>
+    <form-bean name="setEncryptionPasswordForm" type="dms.web.actionforms.user.SetEncryptionPasswordForm"/>
+    <form-bean name="changeEncryptionPasswordForm" type="dms.web.actionforms.user.ChangeEncryptionPasswordForm"/>
+
+    <!-- Scheduler Forms-->
+    <form-bean name="schedulerListForm" type="dms.web.actionforms.scheduler.SchedulerListForm"/>
+     <form-bean name="rescheduleForm" type="dms.web.actionforms.scheduler.RescheduleForm"/>
+
+    <!-- Security Forms-->
+    <form-bean name="aclListForm" type="dms.web.actionforms.security.AclListForm"/>
+    <form-bean name="aclListSelectForm" type="dms.web.actionforms.security.AclListSelectForm"/>
+    <form-bean name="aclListSelectWfForm" type="dms.web.actionforms.security.AclListSelectWfForm"/>
+    <form-bean name="aclNewEditForm" type="dms.web.actionforms.security.AclNewEditForm"/>
+    <form-bean name="permissionBundleListForm" type="dms.web.actionforms.security.PermissionBundleListForm"/>
+    <form-bean name="permissionBundleNewEditForm" type="dms.web.actionforms.security.PermissionBundleNewEditForm"/>
+    <form-bean name="permissionForm" type="dms.web.actionforms.security.PermissionForm"/>
+
+   <!--WorkFlow Forms-->
+    <form-bean name="notificationDetailsForm" type="dms.web.actionforms.workflow.NotificationDetailsForm"/>
+    <form-bean name="myNotificationB4Form" type="dms.web.actionforms.workflow.MyNotificationB4Form"/>
+
+   <!--adapters Forms-->
+    <form-bean name="adapterPreferenceForm" type="adapters.actionforms.AdapterPreferenceForm" />
+    <form-bean name="adapterWebtopForm" type="adapters.actionforms.AdapterWebtopForm" />
+    <form-bean name="psfinVoucherStatusListForm" type="adapters.psfin.actionforms.PSFINVoucherStatusListForm"/>
+    <form-bean name="replaceVoucherForm" type="adapters.psfin.actionforms.ReplaceVoucherForm"/>
+    <form-bean name="psfinVoucherReportForm" type="adapters.psfin.actionforms.PSFINVoucherReportForm"/>
+    <form-bean name="contentForm" type="adapters.actionforms.ShowContentForm"/>
+    <form-bean name="listManagedFoldersForm" type="adapters.actionforms.ListManagedFoldersForm"/>
+    <form-bean name="pshrVoucherStatusListForm" type="adapters.pshr.actionforms.PSHRVoucherStatusListForm"/>
+    <form-bean name="pshrReplaceVoucherForm" type="adapters.pshr.actionforms.PSHRReplaceVoucherForm"/>
+    <form-bean name="pshrVoucherReportForm" type="adapters.pshr.actionforms.PSHRVoucherReportForm"/>
+    <form-bean name="sapVoucherStatusListForm" type="adapters.sap.actionforms.SAPVoucherStatusListForm"/>
+    <form-bean name="sapReplaceVoucherForm" type="adapters.sap.actionforms.SAPReplaceVoucherForm"/>
+    <form-bean name="sapVoucherReportForm" type="adapters.sap.actionforms.SAPVoucherReportForm"/>
+    <form-bean name="genericVoucherStatusListForm" type="adapters.generic.actionforms.GenericVoucherStatusListForm"/>
+    <form-bean name="genericReplaceVoucherForm" type="adapters.generic.actionforms.GenericReplaceVoucherForm"/>
+    <form-bean name="genericVoucherReportForm" type="adapters.generic.actionforms.GenericVoucherReportForm"/>
+
+  </form-beans>
+
+   <!-- ========== Global Forward Definitions ============================== -->
+  <global-forwards>
+    <forward name="login" path="/login.jsp"/>
+    <forward name="globalErrorHandler" path="/global_error_handler.jsp"/>
+    <forward name="userDefault" path="/user_default_def.jsp"/>
+    <forward name="userNew" path="/user_new.jsp"/>
+    <forward name="userEdit" path="/user_edit.jsp"/>
+    <forward name="userB4New" path="/user_list.jsp"/>
+    <forward name="userB4Edit" path="/user_list.jsp"/>
+    <forward name="userDelete" path="/user_list.jsp"/>
+    <forward name="userProfileAction" path="/user_preference_profile.jsp"/>
+    <forward name="changePasswordB4" path="/login.jsp"/>
+    <forward name="setEncryptionPasswordB4" path="/login.jsp"/>
+    <forward name="setURLEncryptPasswordB4" path="/login.jsp"/>
+    <forward name="changeEncryptionPasswordB4" path="/login.jsp"/>
+    <forward name="changePassword" path="/change_password.jsp"/>
+    <forward name="groupNew" path="/group_new.jsp"/>
+    <forward name="groupB4New" path="/group_list.jsp"/>
+    <forward name="groupEdit" path="/group_edit.jsp"/>    
+    <forward name="groupB4Edit" path="/group_list.jsp"/> 
+    <forward name="groupDelete" path="/group_list.jsp"/>
+    <forward name="aclNew" path="/acl_new.jsp"/>    
+    <forward name="aclB4New" path="/acl_list.jsp"/>    
+    <forward name="aclEdit" path="/acl_edit.jsp"/>
+    <forward name="aceRemove" path="/acl_edit.jsp"/>
+    <forward name="aclDelete" path="/acl_list.jsp"/>
+    <forward name="aclB4Edit" path="/aclListAdminAction.do"/>
+    <forward name="permissionB4NewEdit" path="acl_edit.jsp"/>    
+    <forward name="permissionBundleNew" path="/permission_bundle_new.jsp"/>    
+    <forward name="permissionBundleB4New" path="/permission_bundle_list.jsp"/>
+    <forward name="permissionBundleEdit" path="/permission_bundle_edit.jsp"/>      
+    <forward name="permissionBundleB4Edit" path="/permission_bundle_list.jsp"/>    
+    <forward name="permissionBundleDelete" path="/permission_bundle_list.jsp"/>    
+    <forward name="themeNew" path="/theme_new.jsp"/>
+    <forward name="themeEdit" path="/theme_edit.jsp"/>
+    <forward name="themeB4Edit" path="/theme_list.jsp"/>
+    <forward name="mail" path="/mailing.jsp"/>    
+    <forward name="fax" path="/faxing.jsp"/>
+    <forward name="notificationDetails" path="/notification_details.jsp"/>
+    <forward name="jobRescheduleB4" path="/schedulerListAction.do"/>
+  </global-forwards>
+
+  <action-mappings>
+
+    <!-- adapters Action -->
+    <action name="psfinVoucherStatusListForm" path="/psfinVoucherStatusListAction" scope="request" type="adapters.psfin.actions.PSFINVoucherStatusListAction" input="globalErrorHandler" unknown="false">
+      <forward name="success" path="/adapters/psfin/psfin_voucher_status_list.jsp"/>
+      <forward name="notallowed" path="/restricted_resource.jsp"/>
+    </action>
+
+    <action name="pshrVoucherStatusListForm" path="/pshrVoucherStatusListAction" scope="request" type="adapters.pshr.actions.PSHRVoucherStatusListAction" input="globalErrorHandler" unknown="false">
+      <forward name="success" path="/adapters/pshr/pshr_voucher_status_list.jsp"/>
+      <forward name="notallowed" path="/restricted_resource.jsp"/>
+    </action>
+
+    <action name="sapVoucherStatusListForm" path="/sapVoucherStatusListAction" scope="request" type="adapters.sap.actions.SAPVoucherStatusListAction" input="globalErrorHandler" unknown="false">
+      <forward name="success" path="/adapters/sap/sap_voucher_status_list.jsp"/>
+      <forward name="notallowed" path="/restricted_resource.jsp"/>
+    </action>
+
+    <action name="genericVoucherStatusListForm" path="/genericVoucherStatusListAction" scope="request" type="adapters.generic.actions.GenericVoucherStatusListAction" input="globalErrorHandler" unknown="false">
+      <forward name="success" path="/adapters/generic/erp_voucher_status_list.jsp"/>
+      <forward name="notallowed" path="/restricted_resource.jsp"/>
+    </action>
+
+    <action name="adapterWebtopForm" path="/adapterWebtopAction" scope="request" type="adapters.actions.AdapterWebtopAction" input="globalErrorHandler" unknown="false">
+      <forward name="success" path="/adapters/adapter_webtop.jsp"/>
+    </action>
+
+    <action path="/adapterPreferencesB4Action" scope="request" type="adapters.actions.AdapterPreferencesB4Action" input="globalErrorHandler" unknown="false">
+      <forward name="success" path="/adapter_preference_profile.jsp"/>
+    </action>
+
+    <action name="adapterPreferenceForm" path="/adapterPreferencesAction" scope="request" type="adapters.actions.AdapterPreferencesAction" input="globalErrorHandler" unknown="false">
+      <forward name="success" path="/adapterPreferencesB4Action.do"/>
+    </action>
+
+    <action name="adapterPreferenceForm" path="/displayManagedFolderKeyAction" scope="request" type="adapters.actions.DisplayManagedFolderKeyAction" input="globalErrorHandler" unknown="false">
+      <forward name="success" path="/adapterPreferencesB4Action.do"/>
+    </action>
+
+    <action name="contentForm" path="/displayNothingAction" scope="request" type="adapters.actions.DisplayNothingAction" input="globalErrorHandler" unknown="false">
+    </action>
+
+    <action name="listManagedFoldersForm" path="/deleteManagedKeyAction" scope="request" type="adapters.actions.DeleteManagedKeyAction" input="globalErrorHandler" unknown="false">
+      <forward name="success" path="/listManagedFoldersAction.do"/>
+    </action>
+
+    <action name="adapterPreferenceForm" path="/listManagedFoldersAction" scope="request" type="adapters.actions.ListManagedFoldersAction" input="globalErrorHandler" unknown="false">
+      <forward name="success" path="/adapters/list_managed_folders.jsp"/>
+    </action>
+
+    <action path="/replaceVoucherB4Action" scope="request" type="adapters.psfin.actions.ReplaceVoucherB4Action" input="globalErrorHandler" unknown="false" validate="false">
+      <forward name="showLink" path="/adapters/psfin/psfin_response.jsp"/>
+    </action>
+
+    <action path="/pshrReplaceVoucherB4Action" scope="request" type="adapters.pshr.actions.PSHRReplaceVoucherB4Action" input="globalErrorHandler" unknown="false" validate="false">
+      <forward name="showLink" path="/adapters/pshr/pshr_response.jsp"/>
+    </action>
+
+    <action path="/sapReplaceVoucherB4Action" scope="request" type="adapters.sap.actions.SAPReplaceVoucherB4Action" input="globalErrorHandler" unknown="false" validate="false">
+      <forward name="showLink" path="/adapters/sap/sap_response.jsp"/>
+    </action>
+
+    <action path="/genericReplaceVoucherB4Action" scope="request" type="adapters.generic.actions.GenericReplaceVoucherB4Action" input="globalErrorHandler" unknown="false" validate="false">
+      <forward name="showLink" path="/adapters/generic/erp_response.jsp"/>
+    </action>
+
+    <action path="/b4ImageUploadAction" scope="request" type="adapters.psfin.actions.B4ImageUploadAction" input="globalErrorHandler" unknown="false" validate="false">
+      <forward name="success" path="/adapters/psfin/psfin_replace_voucher.jsp"/>
+      <forward name="failure" path="/adapters/psfin/psfin_response.jsp"/>
+    </action>
+
+    <action path="/pshrb4ImageUploadAction" scope="request" type="adapters.pshr.actions.PSHRB4ImageUploadAction" input="globalErrorHandler" unknown="false" validate="false">
+      <forward name="success" path="/adapters/pshr/pshr_replace_voucher.jsp"/>
+      <forward name="failure" path="/adapters/pshr/pshr_response.jsp"/>
+    </action>
+
+    <action path="/sapb4ImageUploadAction" scope="request" type="adapters.sap.actions.SAPB4ImageUploadAction" input="globalErrorHandler" unknown="false" validate="false">
+      <forward name="success" path="/adapters/sap/sap_replace_voucher.jsp"/>
+      <forward name="failure" path="/adapters/sap/sap_response.jsp"/>
+    </action>
+
+    <action path="/genericb4ImageUploadAction" scope="request" type="adapters.generic.actions.GenericB4ImageUploadAction" input="globalErrorHandler" unknown="false" validate="false">
+      <forward name="success" path="/adapters/generic/erp_replace_voucher.jsp"/>
+      <forward name="failure" path="/adapters/generic/erp_response.jsp"/>
+    </action>
+
+    <action  path="/sapShowVoucherAction" scope="request" type="adapters.sap.actions.SAPShowImageVoucherAction" input="globalErrorHandler" unknown="false">
+      <forward name="showImage" path="/adapters/sap/sap_response.jsp"/>
+    </action>
+
+    <action  path="/genericShowVoucherAction" scope="request" type="adapters.generic.actions.GenericShowImageVoucherAction" input="globalErrorHandler" unknown="false">
+      <forward name="showImage" path="/adapters/generic/erp_response.jsp"/>
+    </action>
+
+    <action name="replaceVoucherForm" path="/replaceVoucherAction" scope="request" type="adapters.psfin.actions.ReplaceVoucherAction" input="globalErrorHandler" unknown="false" validate="false">
+      <forward name="success" path="/adapters/psfin/psfin_upload_result.jsp"/>
+      <forward name="failure" path="/adapters/psfin/psfin_contentQuotaExceeded.jsp"/>
+    </action>
+
+    <action name="pshrReplaceVoucherForm" path="/pshrReplaceVoucherAction" scope="request" type="adapters.pshr.actions.PSHRReplaceVoucherAction" input="globalErrorHandler" unknown="false" validate="false">
+      <forward name="success" path="/adapters/pshr/pshr_upload_result.jsp"/>
+      <forward name="failure" path="/adapters/pshr/pshr_contentQuotaExceeded.jsp"/>
+    </action>
+
+    <action name="sapReplaceVoucherForm" path="/sapReplaceVoucherAction" scope="request" type="adapters.sap.actions.SAPReplaceVoucherAction" input="globalErrorHandler" unknown="false" validate="false">
+      <forward name="success" path="/adapters/sap/sap_upload_result.jsp"/>
+      <forward name="failure" path="/adapters/sap/sap_contentQuotaExceeded.jsp"/>
+    </action>
+
+    <action name="genericReplaceVoucherForm" path="/genericReplaceVoucherAction" scope="request" type="adapters.generic.actions.GenericReplaceVoucherAction" input="globalErrorHandler" unknown="false" validate="false">
+      <forward name="success" path="/adapters/generic/erp_upload_result.jsp"/>
+      <forward name="failure" path="/adapters/generic/erp_contentQuotaExceeded.jsp"/>
+    </action>
+
+    <action path="/renameVoucherAction" scope="request" type="adapters.psfin.actions.RenameVoucherAction" input="globalErrorHandler" unknown="false">
+      <forward name="success" path="/adapters/psfin/psfin_response.jsp"/>
+    </action>
+
+    <action path="/pshrRenameVoucherAction" scope="request" type="adapters.pshr.actions.PSHRRenameVoucherAction" input="globalErrorHandler" unknown="false">
+      <forward name="success" path="/adapters/pshr/pshr_response.jsp"/>
+    </action>
+
+    <action path="/sapRenameVoucherAction" scope="request" type="adapters.sap.actions.SAPRenameVoucherAction" input="globalErrorHandler" unknown="false">
+      <forward name="success" path="/adapters/sap/sap_response.jsp"/>
+    </action>
+
+    <action path="/genericRenameVoucherAction" scope="request" type="adapters.generic.actions.GenericRenameVoucherAction" input="globalErrorHandler" unknown="false">
+      <forward name="success" path="/adapters/generic/erp_response.jsp"/>
+    </action>
+
+    <action name="psfinVoucherReportForm" path="/psfinVoucherReportAction" scope="request" type="adapters.psfin.actions.PSFINVoucherReportAction" input="globalErrorHandler" unknown="false">
+      <forward name="success" path="/adapters/psfin/psfin_voucher_report.jsp"/>
+      <forward name="notallowed" path="/restricted_resource.jsp"/>
+    </action>
+
+    <action name="pshrVoucherReportForm" path="/pshrVoucherReportAction" scope="request" type="adapters.pshr.actions.PSHRVoucherReportAction" input="globalErrorHandler" unknown="false">
+      <forward name="success" path="/adapters/pshr/pshr_voucher_report.jsp"/>
+      <forward name="notallowed" path="/restricted_resource.jsp"/>
+    </action>
+
+    <action name="sapVoucherReportForm" path="/sapVoucherReportAction" scope="request" type="adapters.sap.actions.SAPVoucherReportAction" input="globalErrorHandler" unknown="false">
+      <forward name="success" path="/adapters/sap/sap_voucher_report.jsp"/>
+      <forward name="notallowed" path="/restricted_resource.jsp"/>
+    </action>
+
+    <action name="genericVoucherReportForm" path="/genericVoucherReportAction" scope="request" type="adapters.generic.actions.GenericVoucherReportAction" input="globalErrorHandler" unknown="false">
+      <forward name="success" path="/adapters/generic/erp_voucher_report.jsp"/>
+      <forward name="notallowed" path="/restricted_resource.jsp"/>
+    </action>
+
+    <action path="/psfinVoucherStatusResetAction" scope="request" type="adapters.psfin.actions.PSFINVoucherStatusResetAction" unknown="false">
+      <forward name="success" path="/psfinVoucherStatusListAction.do"/>
+    </action>
+
+    <action path="/pshrVoucherStatusResetAction" scope="request" type="adapters.pshr.actions.PSHRVoucherStatusResetAction" unknown="false">
+      <forward name="success" path="/pshrVoucherStatusListAction.do"/>
+    </action>
+
+    <action path="/sapVoucherStatusResetAction" scope="request" type="adapters.sap.actions.SAPVoucherStatusResetAction" unknown="false">
+      <forward name="success" path="/sapVoucherStatusListAction.do"/>
+    </action>
+
+    <action path="/genericVoucherStatusResetAction" scope="request" type="adapters.generic.actions.GenericVoucherStatusResetAction" unknown="false">
+      <forward name="success" path="/genericVoucherStatusListAction.do"/>
+    </action>
+
+    <!-- Login Action -->
+    <action name="loginForm" path="/loginAction" scope="request" type="dms.web.actions.loginout.LoginAction" unknown="false">
+      <forward name="success" path="/webtop.jsp"/>
+      <forward name="failure" path="/login.jsp"/>
+    </action>
+
+    <!-- LogoutAction -->
+    <action path="/logoutAction" scope="request" type="dms.web.actions.loginout.LogoutAction" unknown="false">
+      <forward name="success" path="/logout.jsp"/>
+    </action>
+
+    <!--Mail Actions -->
+    <action name="docMailForm" path="/mailB4Action" scope="request" type="dms.web.actions.mail.MailB4Action" input="globalErrorHandler" unknown="false">
+      <forward name="success" path="/mailing.jsp"/>      
+    </action>
+
+    <action name="mailForm" path="/mailAction" scope="request" type="dms.web.actions.mail.MailAction" input="mail" unknown="false">
+      <forward name="success" path="/mailing.jsp"/>      
+    </action>
+
+    <!--Fax Actions -->
+    <action name="docFaxForm" path="/faxB4Action" scope="request" type="dms.web.actions.fax.FaxB4Action" input="globalErrorHandler" unknown="false">
+      <forward name="success" path="/faxing.jsp"/>      
+    </action>
+
+    <action name="faxForm" path="/faxAction" scope="request" type="dms.web.actions.fax.FaxAction" input="fax" unknown="false">
+      <forward name="success" path="/faxing.jsp"/>      
+    </action>
+
+    <!--WorkFlow Actions -->
+    <action name="notificationDetailsForm" path="/notificationDetailsAction" scope="request" type="dms.web.actions.workflow.NotificationDetailsAction" input="globalErrorHandler" unknown="false">
+      <forward name="success" path="/myNotificationB4Action.do"/>      
+    </action>
+
+    <action  path="/myNotificationB4Action"  name="myNotificationB4Form"  type="dms.web.actions.workflow.MyNotificationB4Action" scope="request"  input="globalErrorHandler"  unknown="false">
+      <forward name="success" path="/mynotification.jsp" />
+     </action>
+     
+    <action  path="/notificationDetailsB4Action"  name="myNotificationB4Form"  type="dms.web.actions.workflow.NotificationDetailsB4Action" scope="request"  input="globalErrorHandler"  unknown="false">
+      <forward name="success" path="/notification_details.jsp" />
+     </action>
+     
+    
+    
+    <!-- ******************************************************************************** -->        
+    <!-- ****************************Folder Doc Starts Here****************************** -->    
+    <!-- ******************************************************************************** -->    
+
+    <action path="/toggleFolderSearchAction" name="advanceSearchForm" scope="request" type="dms.web.actions.filesystem.ToggleFolderSearchAction" unknown="false">
+      <forward name="success" path="/folderDocListAction.do"/>
+    </action>
+
+    <action path="/b4ToggleFolderSearchAction" type="dms.web.actions.filesystem.B4ToggleFolderSearchAction" unknown="false">
+      <forward name="success" path="/toggleFolderSearchAction.do"/>
+    </action>
+    
+    <action path="/advanceSearchAction" name="advanceSearchForm" scope="request" type="dms.web.actions.filesystem.AdvanceSearchAction" unknown="false">
+      <forward name="success" path="/folderDocListAction.do"/>
+    </action> 
+
+    <action path="/folderDocAddWatchAction" name="folderDocListForm" scope="request" type="dms.web.actions.filesystem.FolderDocAddWatchAction" unknown="false">
+      <forward name="success" path="/folderDocListAction.do"/>
+      <forward name="failure" path="/error_handler.jsp"/>
+    </action>
+
+    <action path="/folderDocB4RenameAction" name="folderDocListForm" scope="request" type="dms.web.actions.filesystem.FolderDocB4RenameAction" unknown="false">
+      <forward name="success" path="/folder_doc_rename.jsp"/>
+      <forward name="failure" path="/error_handler_popup.jsp"/>
+    </action>
+
+    <action path="/folderDocBackAction" scope="request" type="dms.web.actions.filesystem.FolderDocBackAction" unknown="false">
+      <forward name="success" path="/folderDocListAction.do"/>
+      <forward name="failure" path="/error_handler.jsp"/>
+    </action>
+
+    <action path="/folderDocMenuClickAction" name="folderDocListForm" scope="request" type="dms.web.actions.filesystem.FolderDocMenuClickAction" unknown="false">
+      <forward name="success" path="/displayListAction.do"/>
+      <forward name="failure" path="/error_handler.jsp"/>
+    </action>
+
+    <action path="/displayListAction" name="folderDocListForm" scope="request" type="dms.web.actions.filesystem.DisplayListAction" unknown="false">
+      <forward name="successForTreeNav" path="/tree_folder_doc_list.jsp"/>
+      <forward name="successForFlatNav" path="/flat_folder_doc_list.jsp"/>
+      <forward name="failure" path="/error_handler.jsp"/>
+    </action>
+
+    <action path="/gotoHomeFolderAction" name="folderDocListForm" scope="request" type="dms.web.actions.filesystem.GotoHomeFolderAction" unknown="false">
+      <forward name="success" path="/folderDocListAction.do"/>
+      <forward name="failure" path="/error_handler.jsp"/>
+    </action>
+
+    <action path="/folderNextAction" name="showContentForm" scope="request" type="dms.web.actions.filesystem.FolderNextAction" unknown="false">
+      <forward name="success" path="/folderFlatListAction.do"/>
+    </action>
+
+    <action path="/folderFlatListAction" name="showContentForm" scope="request" type="dms.web.actions.filesystem.FolderFlatListAction" unknown="false">
+      <forward name="success" path="/flat_folder_list.jsp"/>
+    </action>
+
+    <action path="/b4SearchAction" name="showContentForm" scope="request" type="dms.web.actions.filesystem.B4SearchAction" unknown="false">
+      <forward name="success" path="/search_for_treeview.jsp"/>
+      <forward name="failure" path="/error_handler.jsp"/>
+    </action>
+
+    <action path="/folderDocListAction" name="folderDocListForm" scope="request" type="dms.web.actions.filesystem.FolderDocListAction" unknown="false">
+      <forward name="successForTree" path="/folder_doc_list.jsp"/>
+      <forward name="successForFlat" path="/flat_list_and_search.jsp"/>
+      <forward name="failure" path="/error_handler.jsp"/>
+    </action>
+
+    <action path="/statusBarAction" name="showContentForm" scope="request" type="dms.web.actions.filesystem.StatusBarAction" unknown="false">
+      <forward name="success" path="/flat_status_bar.jsp"/>
+    </action>
+
+    <action path="/folderDocDeleteAction" name="folderDocListForm" scope="request" type="dms.web.actions.filesystem.FolderDocDeleteAction" unknown="false">
+      <forward name="success" path="/folderDocListAction.do"/>
+    </action>
+
+    <action path="/folderDocForwardAction" scope="request" type="dms.web.actions.filesystem.FolderDocForwardAction" unknown="false">
+      <forward name="success" path="/folderDocListAction.do"/>
+      <forward name="failure" path="/error_handler.jsp"/>
+    </action>
+
+    <action path="/folderDocGoToFolderAction" name="folderDocListForm" scope="request" type="dms.web.actions.filesystem.FolderDocGoToFolderAction" unknown="false">
+      <forward name="success" path="/folderDocListAction.do"/>
+    </action>
+
+    <action path="/b4DocEncryptAction" name="docEncryptForm" scope="request" type="dms.web.actions.filesystem.B4DocEncryptAction" unknown="false">
+      <forward name="success" path="/encryption_password.jsp"/>
+    </action>
+
+    <action path="/docEncryptAction" name="docEncryptForm" scope="request" type="dms.web.actions.filesystem.DocEncryptAction" unknown="false">
+      <forward name="success" path="/folderDocListAction.do"/>
+    </action>
+
+    <action path="/b4DocDecryptAction" name="docDecryptForm" scope="request" type="dms.web.actions.filesystem.B4DocDecryptAction" unknown="false">
+      <forward name="success" path="/decryption_password.jsp"/>
+    </action>
+
+    <action path="/docDecryptAction" name="docDecryptForm" scope="request" type="dms.web.actions.filesystem.DocDecryptAction" unknown="false">
+      <forward name="success" path="/folderDocListAction.do"/>
+    </action>
+    
+    <action path ="/b4DocDoNothingAction" name="docLogListForm" scope="request" type="dms.web.actions.filesystem.B4DocDoNothingAction" unknown="false" />
+    <action path="/docDoNothingAction" name="showContentForm" scope="request" type="dms.web.actions.filesystem.DocDoNothingAction" unknown="false" />
+    <action path="/docNothingAction" name="linkDetailsForm" scope="request" type="dms.web.actions.filesystem.DocNothingAction" unknown="false" />
+
+    <action path="/b4DocZipAction" name="docZipForm" scope="request" type="dms.web.actions.filesystem.B4DocZipAction" unknown="false">
+      <forward name="success" path="/doc_zip.jsp"/>
+    </action>
+
+    <action path="/docZipAction" name="docZipForm" scope="request" type="dms.web.actions.filesystem.DocZipAction" unknown="false">
+      <forward name="success" path="/folderDocListAction.do"/>
+    </action>
+
+    <action path="/b4DocUnZipAction" name="docUnZipForm" scope="request" type="dms.web.actions.filesystem.B4DocUnZipAction" unknown="false">
+      <forward name="success" path="/doc_unzip.jsp"/>
+      <forward name="failure" path="/error_handler_popup.jsp"/>      
+    </action>
+
+    <action path="/docUnZipAction" name="docUnZipForm" scope="request" type="dms.web.actions.filesystem.DocUnZipAction" unknown="false">
+      <forward name="success" path="/folderDocListAction.do"/>
+    </action>
+
+    <action path="/folderDocParentAction" scope="request" type="dms.web.actions.filesystem.FolderDocParentAction" unknown="false">
+      <forward name="success" path="/folderDocListAction.do"/>
+      <forward name="failure" path="/error_handler.jsp"/>
+    </action>
+
+    <action path="/displayWfAclsAction" name="folderDocListForm" scope="request" type="dms.web.actions.filesystem.DisplayWfAclsAction" unknown="false">
+      <forward name="success" path="/acl_list_submit_workflow.jsp"/>
+      <forward name="failure" path="/workflow_submission_error.jsp"/>
+    </action>
+
+    <action path="/folderDocFolderClickAction" name="folderDocListForm" scope="request" type="dms.web.actions.filesystem.FolderDocFolderClickAction" unknown="false">
+      <forward name="success" path="/folderDocListAction.do"/>
+    </action>
+
+    <action path="/folderDocRenameAction" name="folderDocRenameForm" scope="request" type="dms.web.actions.filesystem.FolderDocRenameAction" unknown="false">
+      <forward name="success" path="/folderDocListAction.do"/>
+    </action>
+
+    <action path="/folderDocTreeAppendAction" name="folderDocListForm" scope="request" type="dms.web.actions.filesystem.FolderDocTreeAppendAction" unknown="false">
+      <forward name="success" path="/treeview.jsp"/>
+    </action>
+
+    <action path="/b4FolderNewAction" scope="request" type="dms.web.actions.filesystem.B4FolderNewAction" unknown="false">
+      <forward name="success" path="/folder_name.jsp"/>
+    </action>
+    
+    <action path="/b4DocNewAction" scope="request" name="docNewForm" type="dms.web.actions.filesystem.B4DocNewAction" unknown="false">
+      <forward name="success" path="/doc_name.jsp"/>
+    </action>
+
+    <action path="/folderNewAction" name="folderNewForm" scope="request" type="dms.web.actions.filesystem.FolderNewAction" unknown="false">
+      <forward name="success" path="/folderDocListAction.do"/>
+    </action>
+
+    <action path="/b4DocUploadAction" scope="request" type="dms.web.actions.filesystem.B4DocUploadAction" unknown="false">
+      <forward name="success" path="/doc_upload_new.jsp"/>     
+      <forward name="failure" path="/error_handler_popup.jsp"/>
+    </action>
+
+    <action path="/newDocUploadAction" name="newDocUploadForm" scope="request" type="dms.web.actions.filesystem.NewDocUploadAction" unknown="false">
+      <forward name="success" path="/doc_upload_result.jsp"/> 
+      <forward name="failure" path="/contentQuotaExceeded.jsp"/>
+    </action>  
+
+    <action path="/docDownloadAction" name="folderDocListForm" scope="request" type="dms.web.actions.filesystem.DocDownloadAction" unknown="false">
+    </action>
+
+    <action path="/docB4GenerateLinkAction" name="folderDocListForm" scope="request" type="dms.web.actions.filesystem.DocB4GenerateLinkAction" unknown="false">
+      <forward name = "success" path="/obtain_link_limits.jsp" />
+    </action>
+
+    <action path="/docGenerateLinkAction" name="linkDetailsForm" scope="request" type="dms.web.actions.filesystem.DocGenerateLinkAction" unknown="false">
+      <forward name="success" path="/doc_generate_url.jsp"/> 
+      <forward name="failure" path="/link_generation_error.jsp"/>
+    </action>    
+
+    <action path="/docLinkForWfAction" name="folderDocListForm" scope="request" type="dms.web.actions.filesystem.DocLinkForWfAction" unknown="false">
+      <forward name="success" path="/folderDocListAction.do"/>
+    </action>
+      
+    <action path="/b4DocDownloadAction" name="folderDocListForm" scope="request" type="dms.web.actions.filesystem.B4DocDownloadAction" unknown="false">
+      <forward name="success" path="/folderDocListAction.do"/>
+      <forward name="forNewWindow" path="/docDownloadAction.do"/>
+      <forward name="failure" path="/error_handler.jsp"/>      
+    </action>
+
+    <action path="/docViewAsHtmlAction" name="folderDocListForm" scope="request" type="dms.web.actions.filesystem.DocViewAsHtmlAction" unknown="false">
+    </action>
+    
+    <action path="/docViewLogAction" name="docViewLogForm" scope="request" type="dms.web.actions.filesystem.DocViewLogAction" unknown="false">
+      <forward name="success" path="/docLogViewer.jsp" />
+    </action>
+
+    <action path="/folderDocCopyMoveAction" name="folderDocCopyMoveForm" scope="request" type="dms.web.actions.filesystem.FolderDocCopyMoveAction" unknown="false">
+      <forward name="success" path="/folderDocListAction.do"/>
+    </action>
+
+    <action path="/folderDocCutAction" name="folderDocListForm" scope="request" type="dms.web.actions.filesystem.FolderDocCutAction" unknown="false">
+      <forward name="success" path="/folderDocListAction.do"/>
+    </action>
+
+    <action path="/folderDocCopyAction" name="folderDocListForm" scope="request" type="dms.web.actions.filesystem.FolderDocCopyAction" unknown="false">
+      <forward name="success" path="/folderDocListAction.do"/>
+    </action>
+
+    <action path="/folderDocB4PasteAction" name="folderDocPasteForm" scope="request" type="dms.web.actions.filesystem.FolderDocB4PasteAction" unknown="false">
+      <forward name="success" path="/folderDocListAction.do"/>
+    </action>
+
+    <action path="/folderDocPasteAction" name="folderDocPasteForm" scope="request" type="dms.web.actions.filesystem.FolderDocPasteAction" unknown="false">
+      <forward name="success" path="/folderDocListAction.do"/>
+    </action>
+
+    <action path="/folderDocB4PropertyAction" name="folderDocPropertyForm" scope="request" type="dms.web.actions.filesystem.FolderDocB4PropertyAction" unknown="false">
+      <forward name="success_one_document" path="/doc_property.jsp"/>
+      <forward name="success_only_document" path="/doc_property.jsp"/>
+      <forward name="success_one_folder" path="/folder_property.jsp"/>
+      <forward name="success_only_folder" path="/folder_property.jsp"/>
+      <forward name="success_folder_and_document" path="/folder_doc_property.jsp"/>
+      <forward name="failure" path="/error_handler_popup.jsp"/>
+    </action>
+
+    <action path="/folderDocPropertyAction" name="folderDocPropertyForm" scope="request" type="dms.web.actions.filesystem.FolderDocPropertyAction" unknown="false">
+      <forward name="success" path="/folderDocListAction.do"/>
+    </action>
+
+    <action path="/folderDocB4ApplyAclAction" name="folderDocApplyAclForm" scope="request" type="dms.web.actions.filesystem.FolderDocB4ApplyAclAction" unknown="false">
+      <forward name="success" path="/folder_doc_apply_acl.jsp"/>
+      <forward name="failure" path="/error_handler_popup.jsp"/>      
+    </action>
+
+    <action path="/folderDocApplyAclAction" name="folderDocApplyAclForm" scope="request" type="dms.web.actions.filesystem.FolderDocApplyAclAction" unknown="false">
+        <forward name="success" path="/folderDocListAction.do"/>
+    </action>
+
+    <action path="/folderDocNavigateAction" name="folderDocListForm" scope="request" type="dms.web.actions.filesystem.FolderDocNavigateAction" unknown="false">
+      <forward name="success" path="/folderDocListAction.do"/>
+    </action>
+
+    <action path="/folderDocMakeVersionableAction" name="folderDocListForm" scope="request" type="dms.web.actions.filesystem.FolderDocMakeVersionableAction" unknown="false">
+      <forward name="success" path="/folderDocListAction.do"/>
+    </action>
+
+    <action path="/folderDocB4CheckOutAction" name="folderDocCheckOutForm" scope="request" type="dms.web.actions.filesystem.FolderDocB4CheckOutAction" unknown="false">
+      <forward name="success" path="/doc_check_out.jsp"/>
+      <forward name="failure" path="/error_handler_popup.jsp"/>
+    </action>
+
+    <action path="/folderDocCheckOutAction" name="folderDocCheckOutForm" scope="request" type="dms.web.actions.filesystem.FolderDocCheckOutAction" unknown="false">
+      <forward name="success" path="/folderDocListAction.do"/>
+    </action>
+
+    <action path="/folderDocB4CheckInAction" name="folderDocCheckInForm" scope="request" type="dms.web.actions.filesystem.FolderDocB4CheckInAction" unknown="false">
+      <forward name="success" path="/doc_check_in.jsp"/>
+      <forward name="failure" path="/error_handler_popup.jsp"/>
+    </action>
+
+    <action path="/folderDocCheckInAction" name="folderDocCheckInForm" scope="request" type="dms.web.actions.filesystem.FolderDocCheckInAction" unknown="false">
+      <forward name="success" path="/folderDocListAction.do"/>
+    </action>
+
+    <action path="/folderDocCancleCheckoutAction" name="folderDocListForm" scope="request" type="dms.web.actions.filesystem.FolderDocCancleCheckoutAction" unknown="false">
+      <forward name="success" path="/folderDocListAction.do"/>
+    </action>
+
+    <action path="/b4FolderDocSelectNewFolderAction" name="folderDocSelectForm" scope="request" type="dms.web.actions.filesystem.B4FolderDocSelectNewFolderAction" unknown="false">
+      <forward name="success" path="/folder_doc_select_folder_name.jsp"/>
+    </action>
+
+    <action path="/folderDocSelectB4Action" name="folderDocSelectForm" scope="request" type="dms.web.actions.filesystem.FolderDocSelectB4Action" unknown="false">
+      <forward name="success" path="/folder_doc_select.jsp"/>
+    </action>
+
+    <action path="/folderDocSelectNewFolderAction" name="folderDocSelectForm" scope="request" type="dms.web.actions.filesystem.FolderDocSelectNewFolderAction" unknown="false">
+      <forward name="success" path="/folderDocSelectB4Action.do"/>
+    </action>
+
+    <action path="/folderDocSelectGoAction" name="folderDocSelectForm" scope="request" type="dms.web.actions.filesystem.FolderDocSelectGoAction" unknown="false">
+      <forward name="success" path="/folderDocSelectB4Action.do"/>
+    </action>
+
+    <action path="/docHistoryListAction" name="docHistoryListForm" scope="request" type="dms.web.actions.filesystem.DocHistoryListAction" unknown="false">
+      <forward name="success" path="/doc_history_list.jsp"/>
+      <forward name="failure" path="/error_handler_popup.jsp"/>
+    </action>
+
+    <action path="/docHistoryDeleteAction" name="docHistoryListForm" scope="request" type="dms.web.actions.filesystem.DocHistoryDeleteAction" unknown="false">
+      <forward name="success" path="/doc_history_b4_list.jsp"/>
+      <forward name="failure" path="/error_handler_popup.jsp"/>
+    </action>
+
+    <action path="/docHistoryRollbackAction" name="docHistoryListForm" scope="request" type="dms.web.actions.filesystem.DocHistoryRollbackAction" unknown="false">
+      <forward name="success" path="/doc_history_b4_list.jsp"/>
+      <forward name="failure" path="/error_handler_popup.jsp"/>
+    </action>
+
+    <action path="/docHistoryDetailAction" name="docHistoryListForm" scope="request" type="dms.web.actions.filesystem.DocHistoryDetailAction" unknown="false">
+      <forward name="success" path="/doc_history_detail.jsp"/>
+      <forward name="failure" path="/error_handler_popup.jsp"/>
+    </action>
+
+    <action path="/showContentAction" name="showContentForm" type="dms.web.actions.filesystem.ShowContentAction" unknown="false">
+      <forward name="failureInSession" path="/error_handler_popup.jsp"/>
+      <forward name="failureuserInfoNull" path="/error_show_content.jsp"/>
+    </action>
+
+    <action path="/showFolderContentAction" name="showContentForm" type="dms.web.actions.filesystem.ShowFolderContentAction" unknown="false">
+      <forward name="success" path="/display_folder_content.jsp"/>
+      <forward name="failureInSession" path="/error_handler_popup.jsp"/>
+      <forward name="failureuserInfoNull" path="/error_show_content.jsp"/>
+    </action>
+
+    <!-- ******************************************************************************** -->
+    <!-- ****************************Folder Doc End Here********************************* -->    
+    <!-- ******************************************************************************** -->    
+
+    <!--Group Actions -->
+    <action name="groupNewEditForm" path="/groupNewAdminAction" scope="request" type="dms.web.actions.group.GroupNewAction" input="groupNew" unknown="false">
+      <forward name="success" path="/groupListAdminAction.do"/>      
+    </action>
+
+    <action name="groupNewEditForm" path="/groupEditAdminAction" scope="request" type="dms.web.actions.group.GroupEditAction" input="groupEdit" unknown="false">
+      <forward name="success" path="/groupListAdminAction.do"/>
+    </action>
+
+    <action name="groupListForm" path="/groupB4NewAdminAction" scope="request" type="dms.web.actions.group.GroupB4NewAction" input="globalErrorHandler" unknown="false">
+      <forward name="success" path="/group_new.jsp"/>
+    </action>
+
+    <action name="groupListForm" path="/groupB4EditAdminAction" scope="request" type="dms.web.actions.group.GroupB4EditAction" input="groupB4Edit" unknown="false">
+      <forward name="success" path="/group_edit.jsp"/>
+      <forward name="failure" path="/groupListAdminAction.do"/>                  
+    </action>
+
+    <action name="groupListForm" path="/groupListAdminAction" scope="request" type="dms.web.actions.group.GroupListAction" input="globalErrorHandler" unknown="false">
+      <forward name="success" path="/group_list.jsp"/>
+    </action>
+
+    <action name="groupListSelectForm" path="/groupListSelectAdminAction" scope="request" type="dms.web.actions.group.GroupListSelectAction" input="globalErrorHandler" unknown="false">
+      <forward name="success" path="/group_list_select.jsp"/>
+    </action>
+
+    <action name="groupListForm" path="/groupDeleteAdminAction" scope="request" type="dms.web.actions.group.GroupDeleteAction" input="groupDelete" unknown="false">
+      <forward name="success" path="/groupListAdminAction.do"/>
+    </action>
+
+    <!--Preferences Actions -->
+    <action name="userPreferenceProfileForm" path="/userPreferenceProfileB4Action" scope="request" type="dms.web.actions.preferences.UserPreferenceProfileB4Action" input="userProfileAction" unknown="false">
+      <forward name="success" path="/user_preference_profile.jsp"/>
+    </action>
+
+    <action name="userPreferenceProfileForm" path="/userPreferenceProfileAction" scope="request" type="dms.web.actions.preferences.UserPreferenceProfileAction" input="globalErrorHandler" unknown="false">
+      <forward name="success" path="/webtop.jsp"/>
+    </action>
+
+    <action name="userPreferenceProfileForm" path="/manageWatchAction" scope="request" type="dms.web.actions.preferences.ManageWatchAction" input="globalErrorHandler" unknown="false">
+      <forward name="success" path="/userPreferenceProfileB4Action.do"/>
+    </action>
+
+    <action name="userPreferenceProfileForm4ThemePreview" path="/userPreferenceThemePreviewAction" scope="request" type="dms.web.actions.preferences.ThemePreviewAction" unknown="false">
+      <forward name="success" path="/theme_preview.jsp"/>
+    </action>
+
+    <!--Theme Actions -->
+    <action name="themeListForm" path="/themeListAction" scope="request" type="dms.web.actions.theme.ThemeListAction" unknown="false">
+      <forward name="success" path="/theme_list.jsp"/>
+    </action>
+
+    <action name="themeNewEditForm4Preview" path="/themePreviewAction" scope="request" type="dms.web.actions.theme.ThemePreviewAction" input="globalErrorHandler" unknown="false">
+      <forward name="success" path="/theme_preview.jsp"/>
+      <forward name="failure" path="/error_handler_popup.jsp"/>
+    </action>
+    
+    <action name="themeListForm" path="/themeB4NewAction" scope="request" type="dms.web.actions.theme.ThemeB4NewAction" unknown="false">
+      <forward name="success" path="/theme_new.jsp"/>
+      <forward name="failure" path="/error_handler.jsp"/>
+    </action>
+
+    <action name="themeListForm" path="/themeB4EditAction" scope="request" type="dms.web.actions.theme.ThemeB4EditAction" input="themeB4Edit" unknown="false">
+      <forward name="success" path="/theme_edit.jsp"/>
+      <forward name="failure" path="/themeListAction.do"/>
+    </action>
+
+    <action name="themeNewEditForm" path="/themeNewAction" scope="request" type="dms.web.actions.theme.ThemeNewAction" input="themeNew" unknown="false">
+      <forward name="success" path="/themeListAction.do"/>
+      <forward name="failure" path="/error_handler.jsp"/>
+    </action>
+
+    <action name="themeNewEditForm" path="/themeEditAction" scope="request" type="dms.web.actions.theme.ThemeEditAction" input="themeEdit" unknown="false">
+      <forward name="success" path="/themeListAction.do"/>
+      <forward name="failure" path="/error_handler.jsp"/>
+    </action>
+
+    <action name="themeListForm" path="/themeDeleteAction" scope="request" type="dms.web.actions.theme.ThemeDeleteAction" unknown="false">
+      <forward name="success" path="/themeListAction.do"/>
+      <forward name="failure" path="/error_handler.jsp"/>
+    </action>
+
+    <!--Scheduler Actions -->
+    <action name="schedulerListForm" path="/schedulerListAction" scope="request" type="dms.web.actions.scheduler.SchedulerListAction" input="globalErrorHandler" unknown="false">
+      <forward name="success" path="/scheduler_list.jsp"/>
+    </action>
+
+    <action name="schedulerListForm" path="/jobDeleteAdminAction" scope="request" type="dms.web.actions.scheduler.JobDeleteAction" input="globalErrorHandler" unknown="false">
+      <forward name="success" path="/schedulerListAction.do"/>
+    </action>
+
+    <action name="schedulerListForm" path="/jobRescheduleB4AdminAction" scope="request" type="dms.web.actions.scheduler.JobRescheduleB4Action" input="jobRescheduleB4" unknown="false">
+      <forward name="success" path="/re_schedule.jsp"/>
+    </action>
+
+    <action name="rescheduleForm" path="/jobRescheduleAdminAction" scope="request" type="dms.web.actions.scheduler.JobRescheduleAction" input="globalErrorHandler" unknown="false">
+      <forward name="success" path="/schedulerListAction.do"/>
+    </action>
+
+    <action name="schedulerListForm" path="/schedulerStartStopAdminAction" scope="request" type="dms.web.actions.scheduler.SchedulerStartStopAction" input="globalErrorHandler" unknown="false">
+      <forward name="success" path="/schedulerListAction.do"/>
+    </action>
+    
+    <!--Security Actions -->
+    <action name="aclNewEditForm" path="/aclNewAdminAction" scope="request" type="dms.web.actions.security.AclNewAction" input="aclNew" unknown="false">
+      <forward name="success" path="/aclListAdminAction.do"/>
+    </action>
+
+    <action name="aclNewEditForm" path="/aclEditAdminAction" scope="request" type="dms.web.actions.security.AclEditAction" input="aclEdit" unknown="false">
+      <forward name="success" path="/aclListAdminAction.do"/>
+    </action>
+
+    <action name="aclListForm" path="/aclDeleteAdminAction" scope="request" type="dms.web.actions.security.AclDeleteAction" input="aclDelete" unknown="false">
+      <forward name="success" path="/aclListAdminAction.do"/>
+    </action>
+
+    <action name="aclListForm" path="/aclB4NewAdminAction" scope="request" type="dms.web.actions.security.AclB4NewAction" input="globalErrorHandler" unknown="false">
+      <forward name="success" path="/acl_new.jsp"/>
+    </action>
+
+    <action name="aclListForm" path="/aclB4EditAdminAction" scope="request" type="dms.web.actions.security.AclB4EditAction" input="aclB4Edit" unknown="false">
+      <forward name="success" path="/acl_edit.jsp"/>
+      <forward name="failure" path="/aclListAdminAction.do"/>      
+    </action>
+
+    <action name="aclListForm" path="/aclListAdminAction" scope="request" type="dms.web.actions.security.AclListAction" input="globalErrorHandler" unknown="false">
+      <forward name="success" path="/acl_list.jsp"/>
+    </action>
+
+    <action name="aclListSelectForm" path="/aclListSelectAction" scope="request" type="dms.web.actions.security.AclListSelectAction" input="globalErrorHandler" unknown="false">
+      <forward name="success" path="/acl_list_select.jsp"/>
+    </action>
+
+    <action name="aclListSelectForm" path="/aclListSelectForWfAction" scope="request" type="dms.web.actions.security.AclListSelectForWfAction" input="globalErrorHandler" unknown="false">
+      <forward name="success" path="/acl_list_select_wf.jsp"/>
+    </action>
+
+    <action name="aclNewEditForm" path="/aceRemoveAdminAction" scope="request" type="dms.web.actions.security.AceRemoveAction" input="aceRemove" unknown="false">
+      <forward name="success" path="/aclB4EditAdminAction.do"/>
+    </action>
+
+    <action name="permissionBundleNewEditForm" path="/permissionBundleNewAdminAction" scope="request" type="dms.web.actions.security.PermissionBundleNewAction" input="globalErrorHandler" unknown="false">
+      <forward name="success" path="/permissionBundleListAdminAction.do"/>
+    </action>
+
+    <action name="permissionBundleNewEditForm" path="/permissionBundleEditAdminAction" scope="request" type="dms.web.actions.security.PermissionBundleEditAction" input="permissionBundleEdit" unknown="false">
+      <forward name="success" path="/permissionBundleListAdminAction.do"/>
+    </action>
+
+    <action name="permissionBundleListForm" path="/permissionBundleDeleteAdminAction" scope="request" type="dms.web.actions.security.PermissionBundleDeleteAction" input="permissionBundleDelete" unknown="false">
+      <forward name="success" path="/permissionBundleListAdminAction.do"/>
+    </action>
+    
+    <action name="permissionBundleListForm" path="/permissionBundleB4NewAdminAction" scope="request" type="dms.web.actions.security.PermissionBundleB4NewAction" input="globalErrorHandler" unknown="false">
+      <forward name="success" path="/permission_bundle_new.jsp"/>
+    </action>
+
+    <action name="permissionBundleListForm" path="/permissionBundleB4EditAdminAction" scope="request" type="dms.web.actions.security.PermissionBundleB4EditAction" input="permissionBundleB4Edit" unknown="false">
+      <forward name="success" path="/permission_bundle_edit.jsp"/>
+      <forward name="failure" path="/permissionBundleListAdminAction.do"/>      
+    </action>
+
+    <action name="permissionBundleListForm" path="/permissionBundleListAdminAction" scope="request" type="dms.web.actions.security.PermissionBundleListAction" input="globalErrorHandler" unknown="false">
+      <forward name="success" path="/permission_bundle_list.jsp"/>
+    </action>
+
+    <action name="aclNewEditForm" path="/permissionB4NewEditAdminAction" scope="request" type="dms.web.actions.security.PermissionB4NewEditAction" input="globalErrorHandler" unknown="false">
+      <forward name="success" path="/permission.jsp"/>
+      <forward name="errorNew" path="/acl_new.jsp"/>
+      <forward name="errorEdit" path="/acl_edit.jsp"/>
+    </action>
+
+    <action name="permissionForm" path="/permissionNewEditAdminAction" scope="request" type="dms.web.actions.security.PermissionNewEditAction" input="globalErrorHandler" unknown="false">
+      <forward name="success" path="/aclB4EditAdminAction.do"/>
+    </action>
+
+    <!--User Actions -->
+
+    <action path="/changePasswordB4Action" scope="request" type="dms.web.actions.user.ChangePasswordB4Action" input="changePasswordB4" unknown="false">
+      <forward name="success" path="/change_password.jsp"/>
+    </action>
+
+    <action path="/setEncryptionPasswordB4Action" scope="request" type="dms.web.actions.user.SetEncryptionPasswordB4Action" input="setEncryptionPasswordB4" unknown="false">
+      <forward name="success" path="/set_encryption_password.jsp"/>
+    </action>
+
+    <action name="setEncryptionPasswordForm" path="/setEncryptionPasswordAction" scope="request" type="dms.web.actions.user.SetEncryptionPasswordAction" input="setEncryptionPassword" unknown="false">
+      <forward name="success" path="/userPreferenceProfileB4Action.do"/>
+    </action>
+
+    <action path="/setURLEncryptPasswordB4Action" scope="request" type="dms.web.actions.user.SetURLEncryptPasswordB4Action" input="setURLEncryptPasswordB4" unknown="false">
+      <forward name="success" path="/set_url_encryption_pwd.jsp"/>
+      <forward name="failure" path="/url_encryption_pwd_failure.jsp"/>
+    </action>    
+
+    <action name="setEncryptionPasswordForm" path="/setURLEncryptPasswordAction" scope="request" type="dms.web.actions.user.SetURLEncryptPasswordAction" input="setUrlEncryptPassword" unknown="false">
+       <forward name="success" path="/userPreferenceProfileB4Action.do"/> 
+    </action>
+
+    <action path="/changeEncryptionPasswordB4Action" scope="request" type="dms.web.actions.user.ChangeEncryptionPasswordB4Action" input="changeEncryptionPasswordB4" unknown="false">
+      <forward name="success" path="/change_encryption_password.jsp"/>
+    </action>
+
+    <action name="changeEncryptionPasswordForm" path="/changeEncryptionPasswordAction" scope="request" type="dms.web.actions.user.ChangeEncryptionPasswordAction" input="changeEncryptionPassword" unknown="false">
+      <forward name="success" path="/userPreferenceProfileB4Action.do"/>
+    </action>
+
+    
+
+    <action name="changePasswordForm" path="/changePasswordAction" scope="request" type="dms.web.actions.user.ChangePasswordAction" input="changePassword" unknown="false">
+      <forward name="success" path="/userPreferenceProfileB4Action.do"/>
+    </action>    
+    
+    <action name="userDefaultDefForm" path="/userDefaultDefAction" input="userDefault" scope="request" type="dms.web.actions.user.UserDefaultDefAction" unknown="false"/>
+
+    <action name="userNewEditForm" path="/userNewAdminAction" scope="request" type="dms.web.actions.user.UserNewAction" input="userNew" unknown="false">
+      <forward name="success" path="/userListAdminAction.do"/>
+    </action>
+
+    <action name="userListForm" path="/userB4NewAdminAction" scope="request" type="dms.web.actions.user.UserB4NewAction" input="globalErrorHandler" unknown="false">
+      <forward name="success" path="/user_new.jsp"/>
+    </action>
+
+    <action name="userListForm" path="/userB4EditAdminAction" scope="request" type="dms.web.actions.user.UserB4EditAction" input="userB4Edit" unknown="false">
+      <forward name="success" path="/user_edit.jsp"/>      
+      <forward name="failure" path="/userListAdminAction.do"/>            
+    </action>
+
+    <action name="userNewEditForm" path="/userEditAdminAction" scope="request" type="dms.web.actions.user.UserEditAction" input="userEdit" unknown="false">
+      <forward name="success" path="/userListAdminAction.do"/>
+    </action>
+
+    <action name="userListForm" path="/userListAdminAction" scope="request" type="dms.web.actions.user.UserListAction" input="globalErrorHandler" unknown="false">
+      <forward name="success" path="/user_list.jsp"/>
+    </action>
+
+    <action name="userListSelectForm" path="/userListSelectAdminAction" scope="request" type="dms.web.actions.user.UserListSelectAction" input="globalErrorHandler" unknown="false">
+      <forward name="success" path="/user_list_select.jsp"/>
+    </action>
+
+    <action name="userListSelectForm" path="/userListForLogAction" scope="request" type="dms.web.actions.user.UserListForLogAction" input="globalErrorHandler" unknown="false">
+      <forward name="success" path="/user_list_select.jsp"/>
+    </action>
+    
+    <action name="userListForm" path="/userDeleteAdminAction" scope="request" type="dms.web.actions.user.UserDeleteAction" input="userDelete" unknown="false">
+      <forward name="success" path="/userListAdminAction.do"/>
+    </action>
+
+    <!--Relay Action-->
+    <action path="/relayAction" scope="request" type="dms.web.actions.RelayAction" input="globalErrorHandler" unknown="false">
+      <!-- User Relay Action -->
+      <forward name="user_new" path="/userB4NewAdminAction.do"/>
+      <forward name="user_edit" path="/userB4EditAdminAction.do"/>
+      <forward name="user_delete" path="/userDeleteAdminAction.do"/>
+      <forward name="user_list" path="/userListAdminAction.do"/>
+      <forward name="user_select_for_log" path="/userListForLogAction.do" />    
+      <forward name="search_user" path="/userListAdminAction.do"/>     
+      <forward name="search_user_select" path="/userListSelectAdminAction.do"/>
+      <forward name="page_user" path="/userListAdminAction.do"/>
+      <forward name="page_user_select" path="/userListSelectAdminAction.do"/>
+
+      <!-- Group Relay Action -->
+      <forward name="group_new" path="/groupB4NewAdminAction.do"/>
+      <forward name="group_edit" path="/groupB4EditAdminAction.do"/>
+      <forward name="group_delete" path="/groupDeleteAdminAction.do"/> 
+      <forward name="group_list" path="/groupListAdminAction.do"/>
+      <forward name="search_group" path="/groupListAdminAction.do"/>
+      <forward name="search_group_select" path="/groupListSelectAdminAction.do"/>
+      <forward name="page_group" path="/groupListAdminAction.do"/>
+      <forward name="page_group_select" path="/groupListSelectAdminAction.do"/>      
+
+      <!-- Security Relay Action -->
+      <forward name="acl_new" path="/aclB4NewAdminAction.do"/>
+      <forward name="acl_edit" path="/aclB4EditAdminAction.do"/> 
+      <forward name="acl_delete" path="/aclDeleteAdminAction.do"/>
+      <forward name="acl_list" path="/aclListAdminAction.do"/>          
+      <forward name="search_acl" path="/aclListAdminAction.do"/>          
+      <forward name="search_acl_select" path="/aclListSelectAction.do"/>                          
+      <forward name="page_acl" path="/aclListAdminAction.do"/>
+      <forward name="page_acl_select" path="/aclListSelectAction.do"/>
+      <forward name="acl_select_workflow" path="/aclListSelectForWfAction.do"/>
+      <forward name="cancel_acl" path="/aclListAdminAction.do"/>
+      <forward name="permission_bundle_new" path="/permissionBundleB4NewAdminAction.do"/>
+      <forward name="permission_bundle_edit" path="/permissionBundleB4EditAdminAction.do"/>                              
+      <forward name="permission_bundle_delete" path="/permissionBundleDeleteAdminAction.do"/>                              
+      <forward name="search_permission_bundle" path="/permissionBundleListAdminAction.do"/>                    
+      <forward name="page_permission_bundle" path="/permissionBundleListAdminAction.do"/>
+
+      <!-- Theme Relay Action -->
+      <forward name="theme_new" path="/themeB4NewAction.do"/>
+      <forward name="theme_edit" path="/themeB4EditAction.do"/>                              
+      <forward name="theme_delete" path="/themeDeleteAction.do"/>                              
+      <forward name="theme_list" path="/themeListAction.do"/>
+      <forward name="page_theme" path="/themeListAction.do"/>
+      <forward name="search_theme" path="/themeListAction.do"/>                                
+    </action> 
+        
+    <action path="/schedulerRelayAction" scope="request" type="dms.web.actions.scheduler.SchedulerRelayAction" unknown="false">
+    <!--Scheduler Relay Action-->         
+      <forward name="job_reschedule" path="/jobRescheduleB4AdminAction.do"/>
+      <forward name="job_delete" path="/jobDeleteAdminAction.do"/>
+      <forward name="scheduler_start_stop" path="/schedulerStartStopAdminAction.do"/>      
+      <forward name="search_scheduler" path="/schedulerListAction.do"/>     
+      <forward name="page_scheduler" path="/schedulerListAction.do"/>      
+    </action>
+
+    <action path="/adapterRelayAction" name="psfinVoucherStatusListForm" scope="request" type="adapters.psfin.actions.AdapterRelayAction" unknown="false">
+    <!--PSFin Adapter Relay Action-->
+      <forward name="search_voucher" path="/psfinVoucherStatusListAction.do"/>
+      <forward name="page_voucher" path="/psfinVoucherStatusListAction.do"/>
+      <forward name="reset_voucher" path="/psfinVoucherStatusResetAction.do" />
+      <forward name="search_report" path="/psfinVoucherReportAction.do"/>
+    </action>
+
+    <action path="/pshrRelayAction" name="pshrVoucherStatusListForm" scope="request" type="adapters.pshr.actions.PSHRRelayAction" unknown="false">
+    <!--PSHR Adapter Relay Action-->
+      <forward name="search_voucher" path="/pshrVoucherStatusListAction.do"/>
+      <forward name="page_voucher" path="/pshrVoucherStatusListAction.do"/>
+      <forward name="reset_voucher" path="/pshrVoucherStatusResetAction.do" />
+      <forward name="search_report" path="/pshrVoucherReportAction.do"/>
+    </action>
+
+    <action path="/sapRelayAction" name="sapVoucherStatusListForm" scope="request" type="adapters.sap.actions.SAPRelayAction" unknown="false">
+    <!--SAP Adapter Relay Action-->
+      <forward name="search_voucher" path="/sapVoucherStatusListAction.do"/>
+      <forward name="page_voucher" path="/sapVoucherStatusListAction.do"/>
+      <forward name="reset_voucher" path="/sapVoucherStatusResetAction.do" />
+      <forward name="search_report" path="/sapVoucherReportAction.do"/>
+    </action>
+
+    <action path="/genericRelayAction" name="genericVoucherStatusListForm" scope="request" type="adapters.generic.actions.GenericRelayAction" unknown="false">
+    <!--SAP Adapter Relay Action-->
+      <forward name="search_voucher" path="/genericVoucherStatusListAction.do"/>
+      <forward name="page_voucher" path="/genericVoucherStatusListAction.do"/>
+      <forward name="reset_voucher" path="/genericVoucherStatusResetAction.do" />
+      <forward name="search_report" path="/genericVoucherReportAction.do"/>
+    </action>
+
+   <!-- <action name="userListForm" path="/relayAction" scope="request" type="dms.web.actions.RelayAction">
+          <forward name="edit" path="user_edit.jsp"/>
+    </action>  -->
+    
+  </action-mappings>
+
+  <controller>
+    <!-- The "input" parameter on "action" elements is the name of a
+         local or global "forward" rather than a module-relative path -->
+    <set-property property="inputForward" value="true"/>
+    <set-property property="maxFileSize" value="100M"/>
+  </controller>
+  <message-resources parameter="resources.ApplicationResources"/>
+
+  <plug-in className="org.apache.struts.validator.ValidatorPlugIn">
+    <set-property property="pathnames" value="/WEB-INF/validator-rules.xml,/WEB-INF/validation.xml"/>
+  </plug-in>
+ 
+</struts-config>

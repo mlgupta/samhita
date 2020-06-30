@@ -1,0 +1,602 @@
+TD
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 11px;
+}
+
+TH
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 11px;
+}
+
+A:link {
+  FONT-SIZE: 11px; 
+  TEXT-DECORATION: none;
+}
+
+A:visited {
+  FONT-SIZE: 11px; 
+  TEXT-DECORATION: none;
+}
+
+A:hover {
+	FONT-SIZE: 11px;
+  TEXT-DECORATION: underline;
+}
+
+A:active {
+	FONT-SIZE: 11px; 
+  TEXT-DECORATION: none;
+}
+
+A.menu:link
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    TEXT-DECORATION: none
+}
+A.menu:visited
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    TEXT-DECORATION: none
+}
+A.menu:hover
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    TEXT-DECORATION: underline
+}
+A.menu:active
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    TEXT-DECORATION: none
+}
+
+A.menuFldr:link
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 11px;
+    TEXT-DECORATION: none;
+    cursor:pointer;
+}
+A.menuFldr:visited
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 11px;
+    TEXT-DECORATION: none;
+    cursor:pointer;
+}
+A.menuFldr:hover
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 11px;
+    TEXT-DECORATION: underline;
+    cursor:pointer;
+}
+A.menuFldr:active
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 11px;
+    TEXT-DECORATION: none;
+    cursor:pointer;
+}
+
+A.dataLink:link
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 10px;
+    TEXT-DECORATION: none
+}
+A.dataLink:visited
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 10px;
+    TEXT-DECORATION: none
+}
+A.dataLink:hover
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 10px;
+    TEXT-DECORATION: none
+}
+A.dataLink:active
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 10px;
+    TEXT-DECORATION: none
+}
+.dropMenu{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    cursor:pointer;
+    cursor:default;    
+}
+.dropMenuover{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    cursor:pointer;
+    cursor:hand;
+}
+.menuForAdapter{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    cursor:pointer;
+    cursor:hand;
+}
+.tabText
+{
+
+  FONT-SIZE: 11px;
+}
+A.tabTextLink:link
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    TEXT-DECORATION: none
+}
+A.tabTextLink:visited
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    TEXT-DECORATION: none
+}
+A.tabTextLink:hover
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    TEXT-DECORATION: underline
+}
+A.tabTextLink:active
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    TEXT-DECORATION: none
+}
+A.tree:link
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 11px;
+    TEXT-DECORATION: none;
+    cursor:pointer;
+    cursor:hand;
+}
+A.tree:visited
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 11px;
+    TEXT-DECORATION: none;
+    cursor:pointer;
+    cursor:hand;
+}
+A.tree:hover
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 11px;
+    TEXT-DECORATION: none;
+    cursor:pointer;
+    cursor:hand;    
+}
+A.tree:active
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 11px;
+    TEXT-DECORATION: none;
+    cursor:pointer;
+    cursor:hand;    
+}
+
+.componentStyle
+{
+	font-size: 11px;
+}
+
+.componentStyleDisable{
+	background-image: url("images/disable_1px.gif");
+}
+
+/* Following classes are for images in theme_new.jsp theme_edit.jsp ****************************************************************/
+
+.imgStyles{
+  background-image: url("images/styles.gif");
+  width:20px; height:20px;
+ 	float:left;
+  cursor: pointer; 
+  cursor: hand;  
+  
+}
+.imgColorScheme{
+  background-image: url("images/color_bucket.gif");
+  width:20px; height:20px;
+ 	float:left;
+  cursor: pointer; 
+  cursor: hand;    
+}
+.imgFontSelect{
+  background-image: url("images/font_select.gif");
+  width:20px; height:20px;
+ 	float:left;
+  cursor: pointer; 
+  cursor: hand;    
+}
+.imgBackgroundSelect{
+  background-image: url("images/backgrounds.gif");
+  width:20px; height:20px;
+ 	float:left;
+  cursor: pointer; 
+  cursor: hand;    
+}
+
+.imgStyleStandard{
+  background-image: url("images/style_standard.gif");
+  width:20px; height:20px;
+ 	float:left;
+  cursor: pointer; 
+  cursor: hand;    
+}
+.imgStyleClassic{
+  background-image: url("images/style_classic.gif");
+  width:20px; height:20px;
+ 	float:left;
+  cursor: pointer; 
+  cursor: hand;    
+}
+.imgStyleGentle{
+  background-image: url("images/style_gentle.gif");
+  width:20px; height:20px;
+ 	float:left;
+  cursor: pointer; 
+  cursor: hand;    
+}
+.imgStyleCrazy{
+  background-image: url("images/style_crazy.gif");
+  width:20px; height:20px;
+ 	float:left;
+  cursor: pointer; 
+  cursor: hand;    
+}
+.imgColorschemeOcean{
+  background-image: url("images/colorscheme_ocean.gif");
+  width:20px; height:20px;
+ 	float:left;
+  cursor: pointer; 
+  cursor: hand;    
+}
+.imgColorschemeDesert{
+  background-image: url("images/colorscheme_desert.gif");
+  width:20px; height:20px;
+ 	float:left;
+  cursor: pointer; 
+  cursor: hand;    
+}
+.imgColorschemeForest{
+  background-image: url("images/colorscheme_forest.gif");
+  width:20px; height:20px;
+ 	float:left;
+  cursor: pointer; 
+  cursor: hand;    
+}
+.imgColorschemeRose{
+  background-image: url("images/colorscheme_rose.gif");
+  width:20px; height:20px;
+ 	float:left;
+  cursor: pointer; 
+  cursor: hand;    
+}
+.imgColorschemeSilver{
+  background-image: url("images/colorscheme_silver.gif");
+  width:20px; height:20px;
+ 	float:left;
+  cursor: pointer; 
+  cursor: hand;    
+}
+ 
+/* Following classes are for images in Navigation Bar ****************************************************************/
+.imgNavFirst{
+	background-image: url("images/nav_bar_1st.gif");
+  width:17px; height:17px;
+	float:left;
+  cursor: pointer; 
+  cursor: hand;    
+}
+.imgNavFirstDisable{
+	background-image: url("images/nav_bar_1st_disable.gif");
+  width:17px; height:17px;
+	float:left;
+}
+.imgNavPrev{
+	background-image: url("images/nav_bar_prev.gif");
+  width:17px; height:17px;
+	float:left;
+  cursor: pointer; 
+  cursor: hand;    
+}
+.imgNavPrevDisable{
+	background-image: url("images/nav_bar_prev_disable.gif");
+  width:17px; height:17px;
+	float:left;
+}
+.imgNavNext{
+	background-image: url("images/nav_bar_next.gif");
+  width:17px; height:17px;
+	float:left;
+  cursor: pointer; 
+  cursor: hand;    
+}
+.imgNavNextDisable{
+	background-image: url("images/nav_bar_next_disable.gif");
+  width:17px; height:17px;
+	float:left;
+}
+.imgNavLast{
+	background-image: url("images/nav_bar_last.gif");
+  width:17px; height:17px;
+	float:left;
+  cursor: pointer; 
+  cursor: hand;    
+}
+.imgNavLastDisable{
+	background-image: url("images/nav_bar_last_disable.gif");
+  width:17px; height:17px;
+	float:left;
+}
+
+
+
+/* Following classes are for other images  ****************************************************************/
+.imgStatusMsg{
+	background-image: url("images/message_blink.gif");
+  width:20px; height:15px;
+  margin-left:3px;
+}
+
+.imgGo {
+	background-image: url("images/butt_go.gif");
+  width:20px; height:17px;
+	float:left;
+  margin-left:5px;
+  cursor: pointer; 
+  cursor: hand;    
+}
+
+.imgDtPickerOk {
+	background-image: url(images/butt_dtpicker_ok.gif); HEIGHT: 17px; MARGIN-LEFT: 3px; WIDTH: 16px;
+	background-repeat:no-repeat;	
+  cursor: pointer; 
+  cursor: hand;    
+}
+.imgDtPickerCancel {
+	background-image: url(images/butt_dtpicker_cancel.gif); HEIGHT: 17px; MARGIN-LEFT: 3px; WIDTH: 16px;
+	background-repeat:no-repeat;	
+  cursor: pointer; 
+  cursor: hand;  
+}
+.imgDtPickerCal {
+	background-image: url(images/butt_dtpicker_cal.gif); HEIGHT: 17px; MARGIN-LEFT: 3px; WIDTH: 15px;
+	background-repeat:no-repeat;	
+  cursor: pointer; 
+  cursor: hand;    
+}
+
+.imgMoreLeftFolders{
+  background-image: url("images/link_nav_left.gif");
+  width: 18px; height: 18px;
+  float: left;
+  cursor: pointer;
+  cursor: hand;
+}
+
+.imgMoreRightFolders{
+  background-image: url("images/link_nav_right.gif");
+  width: 18px; height: 18px;
+  float: left;
+  cursor: pointer;
+  cursor: hand;
+}
+
+
+/* Following classes are for images in webtop.jsp ****************************************************************/
+
+.imgWebTopUser{
+	background-image: url("images/webtop_user.gif");
+  width:50px; height:50px;
+	float:left;
+}
+.imgWebTopUserOver{
+	background-image: url("images/webtop_user_over.gif");
+  width:50px; height:50px;
+	float:left;
+}
+.imgWebTopUserDisable{
+	background-image: url("images/webtop_user_disable.gif");
+  width:50px; height:50px;
+	float:left;
+}
+
+.imgWebTopGroup{
+	background-image: url("images/webtop_group.gif");
+  width:50px; height:50px;
+	float:left;
+}
+.imgWebTopGroupOver{
+	background-image: url("images/webtop_group_over.gif");
+  width:50px; height:50px;
+	float:left;
+}
+.imgWebTopGroupDisable{
+	background-image: url("images/webtop_group_disable.gif");
+  width:50px; height:50px;
+	float:left;
+}
+.imgWebTopTheme{
+	background-image: url("images/webtop_theme.gif");
+  width:50px; height:50px;
+	float:left;
+}
+.imgWebTopThemeOver{
+	background-image: url("images/webtop_theme_over.gif");
+  width:50px; height:50px;
+	float:left;
+}
+.imgWebTopThemeDisable{
+	background-image: url("images/webtop_theme_disable.gif");
+  width:50px; height:50px;
+	float:left;
+}
+
+.imgWebTopSecurity{
+	background-image: url("images/webtop_security.gif");
+  width:50px; height:50px;
+	float:left;
+}
+.imgWebTopSecurityOver{
+	background-image: url("images/webtop_security_over.gif");
+  width:50px; height:50px;
+	float:left;
+}
+.imgWebTopSecurityDisable{
+	background-image: url("images/webtop_security_disable.gif");
+  width:50px; height:50px;
+	float:left;
+}
+.imgWebTopDocument{
+	background-image: url("images/webtop_document.gif");
+  width:50px; height:50px;
+	float:left;
+}
+.imgWebTopDocumentOver{
+	background-image: url("images/webtop_document_over.gif");
+  width:50px; height:50px;
+	float:left;
+}
+.imgWebTopDocumentDisable{
+	background-image: url("images/webtop_document_disable.gif");
+  width:50px; height:50px;
+	float:left;
+}
+.imgWebTopScheduler{
+	background-image: url("images/webtop_scheduler.gif");
+  width:50px; height:50px;
+	float:left;
+}
+.imgWebTopSchedulerOver{
+	background-image: url("images/webtop_scheduler_over.gif");
+  width:50px; height:50px;
+	float:left;
+}
+.imgWebTopSchedulerDisable{
+	background-image: url("images/webtop_scheduler_disable.gif");
+  width:50px; height:50px;
+	float:left;
+}
+
+.imgWebTopMailing{
+	background-image: url("images/webtop_mailing.gif");
+  width:50px; height:50px;
+	float:left;
+}
+.imgWebTopMailingOver{
+	background-image: url("images/webtop_mailing_over.gif");
+  width:50px; height:50px;
+	float:left;
+}
+.imgWebTopMailingDisable{
+	background-image: url("images/webtop_mailing_disable.gif");
+  width:50px; height:50px;
+	float:left;
+}
+
+.imgWebTopWorkflow{
+	background-image: url("images/webtop_workflow.gif");
+  width:50px; height:50px;
+	float:left;
+}
+.imgWebTopWorkflowOver{
+	background-image: url("images/webtop_workflow_over.gif");
+  width:50px; height:50px;
+	float:left;
+}
+.imgWebTopWorkflowDisable{
+	background-image: url("images/webtop_workflow_disable.gif");
+  width:50px; height:50px;
+	float:left;
+}
+
+.imgWarning{
+	background-image: url("images/warning.gif");
+  width:40px; height:40px;
+}
+
+.imgWebTopAdapter{
+	background-image: url("images/webtop_adapter.gif");
+  width:50px; height:50px;
+	float:left;
+}
+.imgWebTopAdapterOver{
+	background-image: url("images/webtop_adapter_over.gif");
+  width:50px; height:50px;
+	float:left;
+}
+.imgWebTopAdapterDisable{
+	background-image: url("images/webtop_adapter_disable.gif");
+  width:50px; height:50px;
+	float:left;
+}
+
+.imgWebTopFaxing{
+	background-image: url("images/webtop_faxing.gif");
+  width:50px; height:50px;
+	float:left;
+}
+.imgWebTopFaxingOver{
+	background-image: url("images/webtop_faxing_over.gif");
+  width:50px; height:50px;
+	float:left;
+}
+.imgWebTopFaxingDisable{
+	background-image: url("images/webtop_faxing_disable.gif");
+  width:50px; height:50px;
+	float:left;
+}
+.imgWebTopPeopleSoft{
+	background-image: url("images/webtop_peoplesoft.gif");
+  width:50px; height:50px;
+  float:left;
+}
+.imgWebTopPeopleSoftOver{
+	background-image: url("images/webtop_peoplesoft_over.gif");
+  width:50px; height:50px;
+  float:left;
+}
+.imgWebTopPeopleSoftDisable{
+	background-image: url("images/webtop_peoplesoft_disable.gif");
+  width:50px; height:50px;
+  float:left;
+}
+.imgWebTopSAP{
+	background-image: url("images/webtop_sap.gif");
+  width:50px; height:50px;
+  float:left;
+}
+.imgWebTopSAPOver{
+	background-image: url("images/webtop_sap_over.gif");
+  width:50px; height:50px;
+  float:left;
+}
+.imgWebTopSAPDisable{
+	background-image: url("images/webtop_sap_disable.gif");
+  width:50px; height:50px;
+  float:left;
+}
+.imgWebTopERP{
+	background-image: url("images/webtop_erp_generic.gif");
+  width:50px; height:50px;
+  float:left;
+}
+.imgWebTopERPOver{
+	background-image: url("images/webtop_erp_generic_over.gif");
+  width:50px; height:50px;
+  float:left;
+}

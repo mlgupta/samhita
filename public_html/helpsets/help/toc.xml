@@ -1,0 +1,106 @@
+<?xml version='1.0' ?>
+<toc version="1.0">
+    <tocitem text="User">
+        <tocitem text="Introduction" target="user_introduction_html"/>
+        <tocitem text="Search a user" target="user_search_html"/>
+        <tocitem text="Create a new user" target="user_new_html"/>
+        <tocitem text="Edit a user" target="user_edit_html"/>
+        <tocitem text="Delete a user" target="user_delete_html"/>
+        <tocitem text="User Preferences" target="user_preferences_html"/>        
+    </tocitem>
+    <tocitem text="Group">
+        <tocitem text="Introduction" target="group_introduction_html"/>
+        <tocitem text="Search a group" target="group_search_html"/>
+        <tocitem text="Create a new group" target="group_new_html"/>
+        <tocitem text="Edit a group" target="group_edit_html"/>
+        <tocitem text="Delete a group" target="group_delete_html"/>
+    </tocitem>
+    <tocitem text="Theme">
+        <tocitem text="Introduction" target="theme_introduction_html"/>
+        <tocitem text="Search a theme" target="theme_search_html"/>
+        <tocitem text="Create a new theme" target="theme_new_html"/>
+        <tocitem text="Edit a theme" target="theme_edit_html"/>
+        <tocitem text="Delete a theme" target="theme_delete_html"/>
+    </tocitem>
+    <tocitem text="Security">
+        <tocitem text="Introduction" target="security_introduction_html"/>
+        <tocitem text="Search an ACL" target="acl_search_html"/>
+        <tocitem text="Create new ACL" target="acl_new_html"/>
+        <tocitem text="Edit an ACL" target="acl_edit_html"/>
+        <tocitem text="Delete an ACL" target="acl_delete_html"/>
+        <tocitem text="Search a Permission Bundle"
+                 target="permission_bundle_search_html"/>
+        <tocitem text="Create new Permission Bundle"
+                 target="permission_bundle_new_html"/>
+        <tocitem text="Edit a Permission Bundle"
+                 target="permission_bundle_edit_html"/>
+        <tocitem text="Delete a Permission Bundle"
+                 target="permission_bundle_delete_html"/>
+    </tocitem>
+    <tocitem text="Document">
+        <tocitem text="Introduction" target="folder_doc_introduction_html"/>
+        <tocitem text="Search  folder/document" target="folder_doc_search_html"/>
+        <tocitem text="Create a new document" target="document_new_html" />
+        <tocitem text="Create a new folder" target="folder_new_html" />
+        <tocitem text="Rename Folder(s)/Documents(s)"
+                 target="folder_doc_rename_html"/>
+        <tocitem text="Upload document(s)" target="document_upload_html"/>
+        <tocitem text="Download document(s)" target="document_download_html"/>
+        <tocitem text="Apply ACL to Folder(s)/Document(s)"
+                 target="folder_doc_apply_acl_html"/>
+        <tocitem text="View Property of Folder(s)/Document(s)"
+                 target="folder_doc_property_html"/>
+        <tocitem text="Generate links" target="document_generate_links_html"/>
+        <tocitem text="View Document Activity Log" target="document_view_log_html"/>
+        <tocitem text="Add Watch" target="add_watch_to_pos_html" />
+        <tocitem text="View As HTML" target="view_as_html" />
+        <tocitem text="Cut, Copy, Paste Folder(s)/Document(s)"
+                 target="folder_doc_cut_copy_paste_html"/>
+        <tocitem text="Copy, Move Folder(s)/Document(s)"
+                 target="folder_doc_copy_move_html"/>
+        <tocitem text="Delete Folder(s)/Document(s)"
+                 target="folder_doc_delete_html"/>
+        <tocitem text="Check-Out Document(s)" target="document_versioned_html"/>
+        <tocitem text="Check-In Document(s)" target="document_versioned_html"/>
+        <tocitem text="Undo Check-Out Document(s)"
+                 target="document_versioned_html"/>
+        <tocitem text="Make Document(s) versionable"
+                 target="document_versioned_html"/>
+        <tocitem text="View version history of Documents"
+                 target="document_versioned_html"/>
+        <tocitem text="Encrypt Document(s)"
+                 target="document_encrypt_decrypt_html"/>
+        <tocitem text="Decrypt Document(s)"
+                 target="document_encrypt_decrypt_html"/>
+        <tocitem text="Zip Folder(s)/Document(s)"
+                 target="folder_doc_zip_unzip_html"/>
+        <tocitem text="Un-Zip Folder(s)/Document(s)"
+                 target="folder_doc_zip_unzip_html"/>
+        <tocitem text="Submit Document To Workflow"
+                 target="submit_doc_to_workflow_html"/>
+    </tocitem>
+    <tocitem text="Scheduler">
+        <tocitem text="Introduction" target="scheduler_introduction_html"/>
+        <tocitem text="Start/Stop the scheduler"
+                 target="scheduler_start_stop_html"/>
+        <tocitem text="Search a job" target="job_search_html"/>
+        <tocitem text="Create a new job" target="job_new_html"/>
+        <tocitem text="Reschedule a job" target="job_reschedule_html"/>
+        <tocitem text="Delete a job" target="job_delete_html"/>
+    </tocitem>
+    <tocitem text="Mail &amp; Fax">
+        <tocitem text="Introduction" target="mail_fax_introduction_html"/>
+        <tocitem text="Submit a new mail job" target="mail_new_html"/>
+        <tocitem text="Submit a new fax job" target="fax_new_html"/>
+    </tocitem>
+    <tocitem text="Work Flow">
+        <tocitem text="Introduction" target="introduction_to_workflow_html"/>
+        <tocitem text="Using Workflow" target="using_workflow_html"/>
+    </tocitem>
+    <tocitem text="Adapters">
+        <tocitem text="Introduction" target="adapters_introduction_html"/>        
+        <tocitem text="Adapter Preferences" target="adapters_preferences_html"/>        
+        <tocitem text="Voucher Status List" target="psvoucher_status_list_html"/>    
+        <tocitem text="Voucher Report" target="psvoucher_report_html"/>    
+    </tocitem>
+</toc>

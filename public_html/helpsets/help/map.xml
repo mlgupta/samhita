@@ -1,0 +1,65 @@
+<?xml version='1.0' ?>
+<map version="1.0">
+    <mapID target="user_introduction_html" url="user_introduction.html"/>
+    <mapID target="user_search_html" url="user_search.html"/>
+    <mapID target="user_new_html" url="user_new.html"/>
+    <mapID target="user_edit_html" url="user_edit.html"/>
+    <mapID target="user_delete_html" url="user_delete.html"/>
+    <mapID target="user_preferences_html" url="user_preferences.html"/>
+    <mapID target="group_introduction_html" url="group_introduction.html"/>
+    <mapID target="group_search_html" url="group_search.html"/>
+    <mapID target="group_new_html" url="group_new.html"/>
+    <mapID target="group_edit_html" url="group_edit.html"/>
+    <mapID target="group_delete_html" url="group_delete.html"/>
+    <mapID target="theme_introduction_html" url="theme_introduction.html"/>
+    <mapID target="theme_search_html" url="theme_search.html"/>
+    <mapID target="theme_new_html" url="theme_new.html"/>
+    <mapID target="theme_edit_html" url="theme_edit.html"/>
+    <mapID target="theme_delete_html" url="theme_delete.html"/>
+    <mapID target="security_introduction_html" url="security_introduction.html"/>
+    <mapID target="acl_search_html" url="acl_search.html"/>
+    <mapID target="acl_new_html" url="acl_new.html"/>
+    <mapID target="acl_edit_html" url="acl_edit.html"/>
+    <mapID target="acl_delete_html" url="acl_delete.html"/>
+    <mapID target="permissions_html" url="permissions.html"/>
+    <mapID target="permission_bundle_search_html" url="permission_bundle_search.html"/>
+    <mapID target="permission_bundle_new_html" url="permission_bundle_new.html"/>
+    <mapID target="permission_bundle_edit_html" url="permission_bundle_edit.html"/>
+    <mapID target="permission_bundle_delete_html" url="permission_bundle_delete.html"/>
+    <mapID target="scheduler_introduction_html"  url="scheduler_introduction.html"/>
+    <mapID target="scheduler_start_stop_html" url="scheduler_start_stop.html"/>
+    <mapID target="job_search_html" url="job_search.html"/>
+    <mapID target="job_new_html" url="job_new.html"/>
+    <mapID target="job_reschedule_html" url="job_reschedule.html"/>
+    <mapID target="job_delete_html" url="job_delete.html"/>
+    <mapID target="mail_fax_introduction_html" url="mail_fax_introduction.html"/>
+    <mapID target="mail_new_html" url="mail_new.html"/>
+    <mapID target="fax_new_html" url="fax_new.html"/>
+    <mapID target="folder_doc_introduction_html"  url="folder_doc_introduction.html"/>
+    <mapID target="document_new_html"  url="document_new.html"/>
+    <mapID target="add_watch_to_pos_html"  url="add_watch_to_pos.html" />
+    <mapID target="view_as_html"  url="view_as_html.html" />
+    <mapID target="folder_doc_search_html" url="folder_doc_search.html"/>
+    <mapID target="folder_doc_apply_acl_html" url="folder_doc_apply_acl.html"/>
+    <mapID target="folder_doc_copy_move_html" url="folder_doc_copy_move.html"/>
+    <mapID target="folder_doc_cut_copy_paste_html" url="folder_doc_cut_copy_paste.html"/>
+    <mapID target="folder_doc_delete_html" url="folder_doc_delete.html"/>    
+    <mapID target="folder_doc_property_html" url="folder_doc_property.html"/>
+    <mapID target="folder_doc_rename_html" url="folder_doc_rename.html"/>    
+    <mapID target="folder_doc_zip_unzip_html" url="folder_doc_zip_unzip.html"/>
+    <mapID target="folder_new_html" url="folder_new.html"/>
+    <mapID target="document_encrypt_decrypt_html" url="document_encrypt_decrypt.html"/>
+    <mapID target="documents_folder_introduction_html" url="documents_folder_introduction.html"/>
+    <mapID target="document_download_html" url="document_download.html"/>
+    <mapID target="document_generate_links_html" url="document_generate_links.html"/>
+    <mapID target="document_upload_html" url="document_upload.html"/>
+    <mapID target="document_versioned_html" url="document_versioned.html"/>
+    <mapID target="document_view_log_html" url="doc_view_log.html" />
+    <mapID target="submit_doc_to_workflow_html" url="submit_doc_to_workflow.html" />
+    <mapID target="introduction_to_workflow_html" url="wfIntroduction.html" />
+    <mapID target="using_workflow_html" url="usingWorkflow.html" />
+    <mapID target="adapters_introduction_html" url="adapters_introduction.html" />
+    <mapID target="adapters_preferences_html" url="adapters_preferences.html" />
+    <mapID target="psvoucher_status_list_html" url="psvoucher_status_list.html" />
+    <mapID target="psvoucher_report_html" url="psvoucher_report.html" />
+</map>

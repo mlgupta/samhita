@@ -1,0 +1,83 @@
+body{
+scrollbar-base-color: #; 
+scrollbar-face-color: #FF99FF; 
+scrollbar-track-color: #FAD7F9; 
+scrollbar-arrow-color: #990099;
+scrollbar-highlight-color: #FFFFFF; 
+scrollbar-3dlight-color: #D046D6; 
+scrollbar-shadow-color: #CC66CC;
+scrollbar-darkshadow-color: #000000; 
+}
+TH
+{
+ 	  BACKGROUND-COLOR:#D046D6;
+}
+
+.bgClrLvl_1{BACKGROUND-COLOR: #990099} 
+.bgClrLvl_2{BACKGROUND-COLOR: #D046D6}
+.bgClrLvl_3{BACKGROUND-COLOR: #FAD7F9} 
+.bgClrLvl_4{BACKGROUND-COLOR: #FFE7FD} 
+.bgClrLvl_F{BACKGROUND-COLOR: #FFFFFF}
+
+.borderClrLvl_1{BORDER: 1px solid #990099} 
+.borderClrLvl_2{BORDER: 1px solid #D046D6}
+.borderClrLvl_3{BORDER: 1px solid #FAD7F9} 
+.borderClrLvl_4{BORDER: 1px solid #FFE7FD} 
+.borderClrLvl_F{BORDER: 1px solid #FFFFFF}
+
+/* Following classes are for Colorscheme images common to all pages ****************************************************************/
+.imgToolBar {
+	background-image: url("toolbar_bg_tile28px.gif");
+  background-repeat:repeat-x;
+}
+
+.imgStatusBar {
+	background-image: url("statusbar_bg_tile23px.gif");
+  background-repeat:repeat-x;
+}
+.imgData {
+	background-image: url("data_bg_tile200px.gif");
+  background-repeat:repeat-x;
+  background-position:bottom;
+}
+.imgMenuBar21 {
+	background-image: url("menubar_bg_tile21px.gif");
+	background-repeat:repeat-x;
+}
+.imgMenuBar29 {
+	background-image: url("menubar_bg_tile29px.gif");
+	background-repeat:repeat-x;
+}
+.imgMenuBarMotif {
+	background-image: url("menubar_motif.gif");
+	background-repeat:repeat-x;
+}
+
+.imgTopMenuTile{
+	background-image: url("top_menu_tille20.gif");
+	background-repeat:repeat-x;
+}
+.imgTopMenuCorner{
+	background-image: url("top_menu_corner.gif");
+	background-repeat:repeat-x;
+}
+
+
+/* Following classes are for tab images common to all pages ****************************************************************/
+.imgTabLeft {
+	background-image: url("tab_left.gif");
+	background-repeat:no-repeat;
+  height:22px;
+}
+.imgTabTile {
+	background-image: url("tab_tile.gif");
+	background-repeat:repeat-x;
+  height:22px;
+}
+.imgTabRight {
+	background-image: url("tab_right.gif");
+	background-repeat:no-repeat;
+  height:22px;
+}
+
+

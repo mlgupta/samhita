@@ -1,0 +1,354 @@
+<?xml version = '1.0' encoding = 'windows-1252'?>
+<!DOCTYPE form-validation PUBLIC "-//Apache Software Foundation//DTD Commons Validator Rules Configuration 1.0//EN" "http://jakarta.apache.org/commons/dtds/validator_1_0.dtd">
+<form-validation>
+    <global>
+    </global>
+    <formset>
+        <form name="userNewEditForm">
+            <field property="txtUserName"
+                   depends="required, mask,minlength,maxlength">
+                <msg name="mask" key="errors.Name.MaskMessage">
+                </msg>
+                <arg0 key="txt.UserName">
+                </arg0>
+                <msg name="minlength" key="errors.minlength">
+                </msg>
+                <msg name="maxlength" key="errors.maxlength">
+                </msg>
+                <arg1 name="minlength" key="${var:minlength}" resource="false">
+                </arg1>
+                <arg2 name="maxlength" key="${var:maxlength}" resource="false">
+                </arg2>
+                <var>
+                    <var-name>mask</var-name>
+                    <var-value>^[a-zA-Z0-9]*$</var-value>
+                </var>
+                <var>
+                    <var-name>minlength</var-name>
+                    <var-value>5</var-value>
+                </var>
+                <var>
+                    <var-name>maxlength</var-name>
+                    <var-value>20</var-value>
+                </var>
+            </field>
+            <field property="txtPassword" depends="required,minlength,twofields">
+                <msg name="minlength" key="errors.minlength">
+                </msg>
+                <arg0 key="txt.Password">
+                </arg0>
+                <arg1 key="${var:minlength}" name="minlength" resource="false">
+                </arg1>
+                <arg1 name="twofields" key="txt.ConfirmPassword">
+                </arg1>
+                <var>
+                    <var-name>minlength</var-name>
+                    <var-value>5</var-value>
+                </var>
+                <var>
+                    <var-name>secondProperty</var-name>
+                    <var-value>txtConfirmPassword</var-value>
+                </var>
+            </field>
+            <field property="txtConfirmPassword" depends="required,minlength">
+                <msg name="minlength" key="errors.minlength">
+                </msg>
+                <arg0 key="txt.ConfirmPassword">
+                </arg0>
+                <arg1 key="${var:minlength}" name="minlength" resource="false">
+                </arg1>
+                <var>
+                    <var-name>minlength</var-name>
+                    <var-value>5</var-value>
+                </var>
+            </field>
+            <field property="txtAccessControlList" depends="required">
+                <arg0 key="txt.AccessControlList">
+                </arg0>
+            </field>
+            <!--
+                        <field property="txtHomeFolder"
+                               depends="mask">
+                          <msg name="mask" key="errors.HomeEmailFolder.Message">
+                          </msg>
+                          <arg0 key="txt.HomeFolder">
+                          </arg0>
+                          <var>
+                            <var-name>mask</var-name>
+                            <var-value>^[a-zA-Z0-9/]*$</var-value>
+                          </var>        
+                        </field>
+                        
+                        <field property="txtMailFolder"
+                               depends="mask">
+                          <msg name="mask" key="errors.HomeEmailFolder.Message">
+                          </msg>
+                          <arg0 key="txt.MailFolder">
+                          </arg0>
+                          <var>
+                            <var-name>mask</var-name>
+                            <var-value>^[a-zA-Z0-9/]*$</var-value>
+                          </var>        
+                        </field>
+                        -->
+            <field property="txtEmailAddress" depends="email">
+                <arg0 key="txt.EmailAddress"/>
+            </field>
+            <!--<field property="txtHomeFolder" depends="required">
+                          <arg0 key="txt.HomeFolder">
+                          </arg0>
+                        </field>-->
+        </form>
+    </formset>
+    <formset>
+        <form name="groupNewEditForm">
+            <field property="txtGroupName"
+                   depends="required, mask,minlength,maxlength">
+                <msg name="mask" key="errors.Name.MaskMessage">
+                </msg>
+                <arg0 key="txt.GroupName">
+                </arg0>
+                <msg name="minlength" key="errors.minlength">
+                </msg>
+                <msg name="maxlength" key="errors.maxlength">
+                </msg>
+                <arg1 name="minlength" key="${var:minlength}" resource="false">
+                </arg1>
+                <arg2 name="maxlength" key="${var:maxlength}" resource="false">
+                </arg2>
+                <var>
+                    <var-name>mask</var-name>
+                    <var-value>^[a-zA-Z0-9]*$</var-value>
+                </var>
+                <var>
+                    <var-name>minlength</var-name>
+                    <var-value>5</var-value>
+                </var>
+                <var>
+                    <var-name>maxlength</var-name>
+                    <var-value>20</var-value>
+                </var>
+            </field>
+            <field property="txtAccessControlList" depends="required">
+                <arg0 key="txt.AccessControlList">
+                </arg0>
+            </field>
+        </form>
+        <form name="permissionBundleNewEditForm">
+            <field property="txtPermissionBundleName"
+                   depends="required, mask,minlength,maxlength">
+                <msg name="mask" key="errors.Name.MaskMessage">
+                </msg>
+                <arg0 key="txt.PermissionBundleName">
+                </arg0>
+                <msg name="minlength" key="errors.minlength">
+                </msg>
+                <msg name="maxlength" key="errors.maxlength">
+                </msg>
+                <arg1 name="minlength" key="${var:minlength}" resource="false">
+                </arg1>
+                <arg2 name="maxlength" key="${var:maxlength}" resource="false">
+                </arg2>
+                <var>
+                    <var-name>mask</var-name>
+                    <var-value>^[a-zA-Z0-9]*$</var-value>
+                </var>
+                <var>
+                    <var-name>minlength</var-name>
+                    <var-value>3</var-value>
+                </var>
+                <var>
+                    <var-name>maxlength</var-name>
+                    <var-value>20</var-value>
+                </var>
+            </field>
+            <field property="lstSelectedPermission" depends="required">
+                <arg0 key="lbl.SelectedPermissions">
+                </arg0>
+            </field>
+        </form>
+    </formset>
+    <formset>
+        <form name="changePasswordForm">
+            <field property="txtPassword" depends="required,minlength,twofields">
+                <msg name="minlength" key="errors.minlength">
+                </msg>
+                <arg0 key="txt.Password">
+                </arg0>
+                <arg1 key="${var:minlength}" name="minlength" resource="false">
+                </arg1>
+                <arg1 name="twofields" key="txt.ConfirmPassword">
+                </arg1>
+                <var>
+                    <var-name>minlength</var-name>
+                    <var-value>5</var-value>
+                </var>
+                <var>
+                    <var-name>secondProperty</var-name>
+                    <var-value>txtConfirmPassword</var-value>
+                </var>
+            </field>
+            <field property="txtConfirmPassword" depends="required,minlength">
+                <msg name="minlength" key="errors.minlength">
+                </msg>
+                <arg0 key="txt.ConfirmPassword">
+                </arg0>
+                <arg1 key="${var:minlength}" name="minlength" resource="false">
+                </arg1>
+                <var>
+                    <var-name>minlength</var-name>
+                    <var-value>5</var-value>
+                </var>
+            </field>
+        </form>
+        <form name="setEncryptionPasswordForm">
+            <field property="txtPassword" depends="required,minlength,twofields">
+                <msg name="minlength" key="errors.minlength">
+                </msg>
+                <arg0 key="txt.Password">
+                </arg0>
+                <arg1 key="${var:minlength}" name="minlength" resource="false">
+                </arg1>
+                <arg1 name="twofields" key="txt.ConfirmPassword">
+                </arg1>
+                <var>
+                    <var-name>minlength</var-name>
+                    <var-value>5</var-value>
+                </var>
+                <var>
+                    <var-name>secondProperty</var-name>
+                    <var-value>txtConfirmPassword</var-value>
+                </var>
+            </field>
+            <field property="txtConfirmPassword" depends="required,minlength">
+                <msg name="minlength" key="errors.minlength">
+                </msg>
+                <arg0 key="txt.ConfirmPassword">
+                </arg0>
+                <arg1 key="${var:minlength}" name="minlength" resource="false">
+                </arg1>
+                <var>
+                    <var-name>minlength</var-name>
+                    <var-value>5</var-value>
+                </var>
+            </field>
+        </form>
+         <form name="changeEncryptionPasswordForm">
+            <field property="txtOldPassword" depends="required,minlength">
+                <msg name="minlength" key="errors.minlength">
+                </msg>
+                <arg0 key="txt.OldPassword">
+                </arg0>
+                <arg1 key="${var:minlength}" name="minlength" resource="false">
+                </arg1>
+                <var>
+                    <var-name>minlength</var-name>
+                    <var-value>5</var-value>
+                </var>
+            </field>
+            <field property="txtPassword" depends="required,minlength,twofields">
+                <msg name="minlength" key="errors.minlength">
+                </msg>
+                <arg0 key="txt.Password">
+                </arg0>
+                <arg1 key="${var:minlength}" name="minlength" resource="false">
+                </arg1>
+                <arg1 name="twofields" key="txt.ConfirmPassword">
+                </arg1>
+                <var>
+                    <var-name>minlength</var-name>
+                    <var-value>5</var-value>
+                </var>
+                <var>
+                    <var-name>secondProperty</var-name>
+                    <var-value>txtConfirmPassword</var-value>
+                </var>
+            </field>
+            <field property="txtConfirmPassword" depends="required,minlength">
+                <msg name="minlength" key="errors.minlength">
+                </msg>
+                <arg0 key="txt.ConfirmPassword">
+                </arg0>
+                <arg1 key="${var:minlength}" name="minlength" resource="false">
+                </arg1>
+                <var>
+                    <var-name>minlength</var-name>
+                    <var-value>5</var-value>
+                </var>
+            </field>
+            
+        </form>
+    </formset>
+    <formset>
+        <form name="userPreferenceProfileForm">
+         <field property="txtPermittedTreeAccessLevel" depends="required,integer">
+            <msg name="integer" key="errors.Number.MaskMessage" />              
+              <arg0  key="txt.PermittedTreeAccessLevel"/>
+            </field>
+            <field property="txtItemsToBeDisplayedPerPage"
+                   depends="required, integer">
+                <msg name="integer" key="errors.Number.MaskMessage" />              
+              <arg0  key="txt.ItemsToBeDisplayedPerPage"/>
+            </field>
+        </form>
+    </formset>     
+    <formset>
+        <form name="themeNewEditForm">
+            <field property="txtThemeName"
+                   depends="required, mask,minlength,maxlength">
+                <msg name="mask" key="errors.Name.MaskMessage">
+                </msg>
+                <arg0 key="txt.ThemeName">
+                </arg0>
+                <msg name="minlength" key="errors.minlength">
+                </msg>
+                <msg name="maxlength" key="errors.maxlength">
+                </msg>
+                <arg1 name="minlength" key="${var:minlength}" resource="false">
+                </arg1>
+                <arg2 name="maxlength" key="${var:maxlength}" resource="false">
+                </arg2>
+                <var>
+                    <var-name>mask</var-name>
+                    <var-value>^[a-zA-Z0-9]*$</var-value>
+                </var>
+                <var>
+                    <var-name>minlength</var-name>
+                    <var-value>5</var-value>
+                </var>
+                <var>
+                    <var-name>maxlength</var-name>
+                    <var-value>20</var-value>
+                </var>
+            </field>
+        </form>
+    </formset>
+    <formset>
+      <form name="aclNewEditForm">
+        <field property="txtAclName" depends="minlength,required">
+          <msg name="minlength" key="errors.minlength">
+          </msg>
+          <arg0 key="txt.AclName">
+          </arg0>
+          <arg1 key="${var:minlength}" name="minlength" resource="false">
+          </arg1>
+          <var>
+            <var-name>minlength</var-name>
+            <var-value>5</var-value>
+          </var>
+        </field>
+    </form>
+  </formset> 
+  <formset>
+      <form name="loginForm">
+        <field property="userID" depends="required">
+          <arg0 key="txt.UserID">
+          </arg0>          
+        </field>
+        <field property="userPassword" depends="required">
+          <arg0 key="txt.Password">
+          </arg0>          
+        </field>
+    </form>
+  </formset> 
+</form-validation>
